@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Primary Care vs Urgent Care: Which Is Right for You?',
@@ -10,20 +11,20 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/compare/primary-care-vs-urgent-care',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Primary Care vs Urgent Care: Which Is Right for You?',
     description: 'Compare primary care and urgent care side by side: cost structure, time, continuity and when to choose each. Guidance from Opal Medical Group in Hagerstown, MD.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
 const rows = [
   { label: 'Effectiveness', pc: 'Best for ongoing conditions, prevention and coordinated care over time, because one team knows your history.', uc: 'Effective for one-time, non-life-threatening problems that need attention the same day.' },
   { label: 'Side effects & risks', pc: 'Medications are reviewed against your full history, which helps reduce interactions and duplicate prescriptions.', uc: 'Clinicians may not see your full record, so medication choices rely on what you report that day.' },
-  { label: 'Cost', pc: 'Varies by model: insurance copays and deductibles apply, or a monthly membership fee in a direct primary care model.', uc: 'Typically a per-visit charge; copays and deductibles apply with insurance.' },
+  { label: 'Cost', pc: 'Billed through your insurance. Copays and deductibles apply as your plan sets them.', uc: 'Typically a per-visit charge; copays and deductibles apply with insurance.' },
   { label: 'Time commitment', pc: 'Scheduled visits; relationship builds over time and often means fewer repeat explanations.', uc: 'Walk-in style; wait times vary and each visit starts from scratch.' },
   { label: 'Best for', pc: 'Annual exams, chronic conditions, medication management, referrals, and questions about your health.', uc: 'Minor injuries, sprains, mild infections, and problems arising after hours.' },
 ]
@@ -60,25 +61,18 @@ export default function Page() {
   ]
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/compare-primary-care-vs-urgent-care.jpg" alt="Close-up of a modern hospital emergency room entrance with prominent red letters.">
+        <div>
           <p className="text-sm mb-6">Home › Resources › Comparison</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light">Primary Care vs Urgent Care: Which Is Right for You?</h1>
+          <h1 className="font-cormorant text-5xl font-light">Primary Care vs Urgent Care: Which Is Right for You?</h1>
           <p className="mt-6 text-lg">A practical guide to choosing where to go, from Opal Medical Group in Hagerstown, MD.</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-primary-care-vs-urgent-care.jpg"} alt={"Close-up of a modern hospital emergency room entrance with prominent red letters."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-semibold">
               <div className="p-4">Factor</div>
@@ -99,13 +93,13 @@ export default function Page() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-[var(--color-ink)]">
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Primary Care</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Primary Care</h2>
             <p className="mb-4">Primary care is the home base for your health. A primary care clinician manages ongoing conditions, provides preventive screenings and annual exams, reviews medications, and refers you to specialists when needed.</p>
             <p className="mb-4">Research consistently links having a regular primary care source with better chronic disease management and more appropriate use of preventive services. The benefit comes from continuity: the same team sees patterns over time.</p>
             <p className="mb-12">A typical patient is someone with a long-term condition, someone who wants preventive care, or anyone who prefers a single trusted point of contact. At Opal Medical Group, care is provided by Yi Vance, CRNP, Dr. Farid Murshed, MD, and Dr. M. Khalid Waseem, MD, CMD, with telehealth also offered.</p>
           </div>
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Urgent Care</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Urgent Care</h2>
             <p className="mb-4">Urgent care centers treat problems that need prompt attention but are not emergencies, such as sprains, minor cuts, sore throats, and mild infections. Many offer extended hours and on-site basic imaging or testing.</p>
             <p className="mb-4">The tradeoff is fragmentation. Each visit is typically a standalone encounter, and follow-up usually falls back to your primary care clinician.</p>
             <p>Expect to describe your history at each visit, receive focused treatment for the immediate issue, and be advised to follow up with your regular clinician.</p>
@@ -114,7 +108,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant,serif] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="font-semibold text-xl mb-4 text-[var(--color-dark)]">Choose primary care if...</h3>
         <ul className="space-y-3 mb-8 text-[var(--color-ink)]">
           {pcList.map((t) => (<li key={t} className="flex gap-3"><Check />{t}</li>))}
@@ -127,7 +121,7 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="group border border-[var(--color-border)] rounded-xl p-5 animate-fade-up">
@@ -141,7 +135,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-primary)] py-20 text-center text-white">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-4">Not sure where to start?</h2>
+          <h2 className="font-cormorant text-4xl mb-4">Not sure where to start?</h2>
           <p className="mb-8">Call (240) 420-2666 or send us a message. We are at 1126 Opal Ct, Hagerstown, MD 21740.</p>
           <a href="/contact" className="inline-block rounded-full bg-[var(--color-accent-dark)] px-8 py-3 font-semibold text-white transition-colors hover:bg-[var(--color-ink)]">Discuss Your Options</a>
         </div>

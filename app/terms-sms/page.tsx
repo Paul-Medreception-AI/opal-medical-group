@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Terms and Conditions - SMS | Opal Medical Group',
@@ -9,16 +10,16 @@ export const metadata: Metadata = {
 export default function TermsSmsPage() {
   return (
     <main className="min-h-screen">
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
-        <div className="container mx-auto px-6">
+      <SplitHero src="/images/stock/hero-sms.jpg" alt="Hands typing a text message on a smartphone">
+        <div className="container">
           <h1 className="font-cormorant text-5xl font-bold mb-4 animate-fade-up">
             Opal Medical Group Terms and Conditions - SMS
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto animate-fade-up">
+          <p className="text-xl text-white/90 max-w-2xl animate-fade-up">
             Opal Medical Group
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">

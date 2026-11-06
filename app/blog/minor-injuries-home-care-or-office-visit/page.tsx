@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Minor Injuries: Home Care or Office Visit?',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/blog/minor-injuries-home-care-or-office-visit',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Minor Injuries: Home Care or Office Visit?',
     description: 'Learn which minor injuries can be treated at home, which warning signs call for an office visit, and how to decide with confidence.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -26,30 +27,23 @@ const check = (
   </svg>
 )
 
-const h2 = 'font-serif text-3xl text-[var(--color-ink)] mt-12 mb-4'
+const h2 = 'font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4'
 const p = 'text-[var(--color-ink)] leading-loose text-base mb-4'
 
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-minor-injuries-home-care-or-office-visit.jpg" alt="A close-up view of an adult applying a band aid to a child's wounded knee outdoors during the day.">
+        <div>
           <nav className="text-sm text-white/80 mb-6">
             <a href="/" className="hover:underline">Home</a> › <a href="/blog" className="hover:underline">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-serif text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Minor Injuries: Home Care or Office Visit?</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Minor Injuries: Home Care or Office Visit?</h1>
           <p className="mt-6 text-white/80 text-sm">Published November 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-minor-injuries-home-care-or-office-visit.jpg"} alt={"A close-up view of an adult applying a band aid to a child's wounded knee outdoors during the day."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className={p}>It happens in a second: a slip on the stairs, a kitchen knife that goes a little too deep, a twisted ankle on an uneven sidewalk. Then comes the worry. Can I handle this myself, or should someone take a look? Many people either rush in for something that would have healed on its own or wait too long on an injury that needed attention. This guide offers a practical way to think it through.</p>
@@ -66,7 +60,7 @@ export default function Page() {
           <li className="flex gap-3 text-[var(--color-ink)] leading-loose">{check}<span><strong>Minor burns:</strong> Cool running water for several minutes, then a loose clean covering. Avoid butter, oils, or ice.</span></li>
         </ul>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-serif">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Most minor injuries improve steadily over several days, and a lack of improvement is itself useful information.
         </div>
 
@@ -115,21 +109,21 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-serif text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <a href="/blog" className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 transition hover:shadow-lg">
               <svg className="w-8 h-8 text-[var(--color-accent)] mb-3" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-              <h4 className="font-serif text-xl text-[var(--color-ink)]">All Health Articles</h4>
+              <h4 className="font-cormorant text-xl text-[var(--color-ink)]">All Health Articles</h4>
               <p className="text-sm text-[var(--color-muted)] mt-2">Browse more patient education from our blog.</p>
             </a>
             <a href="/services" className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 transition hover:shadow-lg">
               <svg className="w-8 h-8 text-[var(--color-accent)] mb-3" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
-              <h4 className="font-serif text-xl text-[var(--color-ink)]">Our Services</h4>
+              <h4 className="font-cormorant text-xl text-[var(--color-ink)]">Our Services</h4>
               <p className="text-sm text-[var(--color-muted)] mt-2">See the primary care services we offer in Hagerstown.</p>
             </a>
             <a href="/contact" className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 transition hover:shadow-lg">
               <svg className="w-8 h-8 text-[var(--color-accent)] mb-3" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372a1.125 1.125 0 00-.852-1.091l-4.423-1.106a1.125 1.125 0 00-1.173.417l-.97 1.293a1.125 1.125 0 01-1.21.38 12.035 12.035 0 01-7.143-7.143 1.125 1.125 0 01.38-1.21l1.293-.97c.363-.272.527-.734.417-1.173L6.963 3.102A1.125 1.125 0 005.872 2.25H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
-              <h4 className="font-serif text-xl text-[var(--color-ink)]">Contact Us</h4>
+              <h4 className="font-cormorant text-xl text-[var(--color-ink)]">Contact Us</h4>
               <p className="text-sm text-[var(--color-muted)] mt-2">Call or reach out to schedule a visit or telehealth appointment.</p>
             </a>
           </div>
@@ -138,7 +132,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-serif text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/90">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition text-white px-8 py-3 rounded-full font-medium">Contact Us</a>
         </div>

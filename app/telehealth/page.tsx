@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/telehealth',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Telehealth Services | Opal Medical Group Hagerstown',
     description: 'Learn how virtual primary care visits work at Opal Medical Group in Hagerstown, MD, including what can be handled remotely and what to prepare.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -110,18 +111,18 @@ const benefits = [
 export default function TelehealthPage() {
   return (
     <main className="bg-[var(--color-cream)] text-[var(--color-ink)]">
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light">Telehealth Services</h1>
+      <SplitHero src="/images/stock/hero-telehealth.jpg" alt="A woman has a video visit with her provider from her sofa">
+        <div>
+          <h1 className="font-cormorant text-5xl font-light">Telehealth Services</h1>
           <p className="mt-6 text-lg text-white/90">
             Virtual visits let you connect with your Opal Medical Group primary care provider from home, with the same personal attention you receive in the office.
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light text-center text-[var(--color-primary)]">How Telehealth Works</h2>
+          <h2 className="font-cormorant text-4xl font-light text-center text-[var(--color-primary)]">How Telehealth Works</h2>
           <div className="mt-14 grid gap-8 md:grid-cols-3">
             {steps.map((s) => (
               <div key={s.number} className="animate-fade-up bg-white border border-[var(--color-border)] rounded-2xl p-8 transition hover:shadow-lg">
@@ -169,7 +170,7 @@ export default function TelehealthPage() {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light text-center text-[var(--color-primary)]">Benefits of Virtual Visits</h2>
+          <h2 className="font-cormorant text-4xl font-light text-center text-[var(--color-primary)]">Benefits of Virtual Visits</h2>
           <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b) => (
               <div key={b.title} className="animate-fade-up bg-[var(--color-cream)] border border-[var(--color-border)] rounded-2xl p-8 transition hover:shadow-lg">
@@ -183,7 +184,7 @@ export default function TelehealthPage() {
       </section>
 
       <section className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20">
-        <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light text-[var(--color-primary)]">What You Need</h2>
+        <h2 className="font-cormorant text-4xl font-light text-[var(--color-primary)]">What You Need</h2>
         <ul className="mt-6 space-y-4 text-[var(--color-ink)]">
           <li className="flex gap-3">
             <svg className="w-6 h-6 shrink-0 text-[var(--color-accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -214,7 +215,7 @@ export default function TelehealthPage() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light">Ready to Schedule a Virtual Visit?</h2>
+          <h2 className="font-cormorant text-4xl font-light">Ready to Schedule a Virtual Visit?</h2>
           <p className="mt-4 text-white/90">Contact our Hagerstown office to request an appointment or call (240) 420-2666.</p>
           <Link href="/contact" className="mt-8 inline-block rounded-full bg-[var(--color-accent)] px-8 py-3 font-semibold text-white transition hover:bg-[var(--color-accent-dark)]">
             Book Appointment

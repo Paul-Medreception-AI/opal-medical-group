@@ -1,6 +1,6 @@
 import type { ServicePageContent } from '@/components/templates/ServicePageTemplate'
 
-const BASE = {"siteUrl":"https://opalmedicalgroup.com","siteName":"Opal Medical Group","ctaLabel":"Book an Appointment","ctaHref":"/contact","hubLabel":"Services","hubHref":"/services","ogImage":"/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg"};
+const BASE = {"siteUrl":"https://opalmedicalgroup.com","siteName":"Opal Medical Group","ctaLabel":"Book an Appointment","ctaHref":"/contact","hubLabel":"Services","hubHref":"/services","ogImage":"/images/stock/hero-home.jpg"};
 
 export const SERVICES: ServicePageContent[] = [
   {
@@ -105,7 +105,7 @@ export const SERVICES: ServicePageContent[] = [
     faqs: [{"q":"Which conditions do you help manage?","a":"Primary care commonly manages conditions such as high blood pressure, type 2 diabetes, high cholesterol, asthma, thyroid disorders and heart disease. If you are unsure whether your condition fits, call the office and we can talk it through."},{"q":"How often will I need to be seen?","a":"It depends on how stable your conditions are. Newly diagnosed or changing conditions often need more frequent visits, while stable ones may need less frequent check-ins. Your provider will recommend a schedule that fits you."},{"q":"Can some visits be done by telehealth?","a":"Yes. Opal Medical Group offers telehealth and video visits, which can work well for reviewing home readings, discussing lab results and managing medications. Some visits still need an in-person exam."},{"q":"Can chronic conditions be cured?","a":"Most chronic conditions are not cured, but many can be controlled well. Consistent treatment, healthy habits and regular monitoring can reduce symptoms and lower the risk of complications."},{"q":"Are you accepting new patients?","a":"Yes, Opal Medical Group is currently accepting new patients at 1126 Opal Ct in Hagerstown. Call (240) 420-2666 or use the contact page to get started."}],
     relatedLinks: [{"href":"/services","label":"Preventive & Annual Health Exams","eyebrow":"Related","body":"Screenings and yearly exams that catch problems early and keep you on track."},{"href":"/telehealth","label":"Telehealth & Medication Management","eyebrow":"Related","body":"Convenient video visits and careful review of the medications you take."},{"href":"/about","label":"Why Choose Us","eyebrow":"Related","body":"Learn about our providers and our approach to relationship-based primary care."}],
     ctaHeading: "Ready to Get Help with Chronic Disease Management?",
-    ctaBody: "Visit us at 1126 Opal Ct, Hagerstown, MD 21740 or call (240) 420-2666. Thursday hours run 7:30 AM to 8:30 PM.",
+    ctaBody: "Visit us at 1126 Opal Ct, Hagerstown, MD 21740 or call (240) 420-2666.",
   },
   {
     ...BASE,

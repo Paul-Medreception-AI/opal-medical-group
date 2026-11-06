@@ -10,8 +10,8 @@
   --color-cream: #fafcfe;
   --color-muted: #64748b;
   --color-border: #dbeefb;
-  --color-accent: #4ba3db;
-  --color-accent-dark: #316a8e;
+  --color-accent: #4c9c24;
+  --color-accent-dark: #3c7f1b;
 }
 
 * { box-sizing: border-box; }
@@ -26,4 +26,8 @@ body { background-color: var(--color-cream); color: var(--color-ink); }
   animation: fadeUp 0.65s cubic-bezier(0.22,1,0.36,1) forwards;
   animation-timeline: view();
   animation-range: entry 0% entry 35%;
+}
+/* Below lg the sticky call bar owns the bottom edge; lift the MedReception widget launcher above it. */
+@media (max-width: 1023px) {
+  #medreception-widget-host { bottom: 88px !important; }
 }

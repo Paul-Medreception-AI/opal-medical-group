@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -11,25 +12,28 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/faq',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Frequently Asked Questions | Opal Medical Group',
     description: 'Answers to common questions about primary care at Opal Medical Group in Hagerstown, MD: new patients, appointments, telehealth, medications and referrals.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
 const faqs = [
   { q: 'Are you accepting new patients?', a: 'Yes, Opal Medical Group is currently accepting new patients. You can request an appointment through our online form or by calling the office at (240) 420-2666. Our team will follow up to confirm your visit and let you know what to bring.' },
   { q: 'Which providers can I see?', a: 'Our team includes Yi Vance, CRNP, a Family Nurse Practitioner, along with Dr. Farid Murshed, MD and Dr. M. Khalid Waseem, MD, CMD, both in Internal Medicine. When you request an appointment you can share your preferred provider. Our staff will do their best to match your request with availability.' },
-  { q: 'Do you accept my insurance?', a: 'Insurance questions are best answered by our office team, since coverage varies from plan to plan. Please call (240) 420-2666 with your plan details and we can tell you how to proceed. It also helps to have your insurance card nearby when you call.' },
+  { q: 'Do you accept my insurance?', a: 'We accept most major insurance plans, including Medicare. Coverage still varies from plan to plan, so please call (240) 420-2666 with your plan details and our team will verify your benefits before your visit. It helps to have your insurance card nearby when you call.' },
+  { q: 'Can I be seen the same day if I am sick?', a: 'Yes. Same-day sick visits are worked into the schedule around routine appointments. Call the office as early in the day as you can and our team will find a time.' },
+  { q: 'What happens if I call after hours?', a: 'After 5:00 PM and before 8:00 AM, calls are forwarded to the provider on call. For chest pain, trouble breathing or any emergency, call 911 or go to the nearest emergency room.' },
+  { q: 'Do your providers speak languages other than English?', a: 'Yes. Between them, our providers speak English, Chinese, Persian, Bengali, Hindi, Punjabi and Urdu. Let the office know your preferred language when you schedule.' },
   { q: 'How much do visits cost?', a: 'We do not publish fees online, so we are not able to quote costs on this page. Please call the office at (240) 420-2666 and our team will explain what to expect for your situation. Asking before your visit is always welcome.' },
   { q: 'What should I expect at my first visit?', a: 'Your provider will listen to your medical history, current concerns and health goals. Together you will discuss any needed exams or screenings. You will leave with a clear plan tailored to your needs and an understanding of how follow-up will work.' },
   { q: 'What should I bring to my first appointment?', a: 'Bring a photo ID, your insurance card if you have one, and a list of current medications, including supplements and over-the-counter products. Records from previous providers, such as recent lab results or imaging, can be very helpful. Writing down your questions beforehand also makes the visit more productive.' },
   { q: 'How do I schedule an appointment?', a: 'You can send a request through the form on our contact page or call the office at (240) 420-2666. Choose your preferred provider if you have one, and our team will follow up to confirm the visit. Calling is a good option if your concern is time sensitive.' },
-  { q: 'What are your office hours?', a: 'We are open Monday 8:00 AM to 5:30 PM, Tuesday and Wednesday 8:00 AM to 5:00 PM, Thursday 7:30 AM to 8:30 PM, and Friday 8:00 AM to 4:30 PM. The office is closed Saturday and Sunday. Our Thursday hours extend into the evening for patients who need a later option.' },
+  { q: 'What are your office hours?', a: 'The office is open Monday through Friday, 8:00 AM to 5:00 PM, and closed Saturday and Sunday. After 5:00 PM, calls are forwarded to the provider on call. Same-day sick visits are worked into the schedule, so call in the morning if you are unwell.' },
   { q: 'Where is the office located?', a: 'We are at 1126 Opal Ct, Hagerstown, MD 21740. If you need directions or have questions about arriving for your visit, call us at (240) 420-2666. Telehealth is also available for appropriate visits.' },
   { q: 'Do you offer telehealth or video visits?', a: 'Yes, we offer telehealth for appropriate visits such as medication management and some follow-ups. Telehealth can save travel time and is convenient for many routine questions. Your provider will tell you if a concern needs to be seen in person so exams can be done properly.' },
   { q: 'Can you manage my chronic conditions?', a: 'Yes. We provide chronic disease management for conditions such as diabetes, hypertension and arthritis. Care plans are built around your goals and include ongoing follow-up so your plan stays on track. Your provider will review your progress and adjust treatment as needed.' },
@@ -45,21 +49,21 @@ const faqs = [
 export default function FAQPage() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-faq.jpg" alt="A clinician and patient review documents together">
+        <div>
           <nav className="text-sm mb-6 text-white/80">
             <Link href="/" className="hover:text-white transition-colors">Home</Link> › <span>FAQ</span>
           </nav>
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light mb-4">Frequently Asked Questions</h1>
+          <h1 className="font-cormorant text-5xl font-light mb-4">Frequently Asked Questions</h1>
           <p className="text-lg text-white/90">Everything you need to know about our practice and services</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
           {faqs.map((f) => (
             <details key={f.q} className="animate-fade-up group border border-[var(--color-border)] rounded-xl mb-3 bg-white">
-              <summary className="cursor-pointer p-6 font-semibold text-[var(--color-ink)] font-[Cormorant_Garamond,serif] text-xl list-none flex justify-between items-center gap-4">
+              <summary className="cursor-pointer p-6 font-semibold text-[var(--color-ink)] font-cormorant text-xl list-none flex justify-between items-center gap-4">
                 <span>{f.q}</span>
                 <svg className="w-5 h-5 shrink-0 text-[var(--color-accent)] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -73,7 +77,7 @@ export default function FAQPage() {
 
       <section className="bg-[var(--color-ink)] text-white py-20 text-center">
         <div className="max-w-3xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light mb-4">Still Have Questions?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Still Have Questions?</h2>
           <p className="text-white/80 mb-8">Call (240) 420-2666 or send us a message and our team will be glad to help.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white font-semibold px-8 py-4 rounded-full">
             Book Appointment

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Prediabetes: Warning Sign and Opportunity',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/blog/prediabetes-warning-sign-and-opportunity',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Prediabetes: Warning Sign and Opportunity',
     description: 'Learn what prediabetes is, who is at risk, why it matters, and the practical steps that can help lower your risk of type 2 diabetes.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -45,31 +46,24 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-prediabetes-warning-sign-and-opportunity.jpg" alt="Yellow triangular warning sign indicating slippery surface in lush forest setting.">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Prediabetes: Warning Sign and Opportunity</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Prediabetes: Warning Sign and Opportunity</h1>
           <p className="mt-6 text-white/80 text-sm">Published November 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-prediabetes-warning-sign-and-opportunity.jpg"} alt={"Yellow triangular warning sign indicating slippery surface in lush forest setting."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6 animate-fade-up">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Many people hear the word “prediabetes” at a routine visit and feel a jolt of worry. Nothing hurt. Nothing felt different. Yet a simple blood test says your body is struggling to manage sugar. It is easy to feel alarmed, but here is the hopeful truth: prediabetes is one of the few health warnings that can often be acted on before lasting damage is done.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Prediabetes?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Prediabetes?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Prediabetes means your blood sugar is higher than normal but not yet high enough to be diagnosed as type 2 diabetes. It usually develops when cells respond less well to insulin, the hormone that moves sugar from the blood into cells. The pancreas makes more insulin to compensate, and over time it may not keep up.
         </p>
@@ -77,7 +71,7 @@ export default function Page() {
           Clinicians commonly diagnose it with a fasting glucose of 100 to 125 mg/dL, an A1C of 5.7 to 6.4 percent, or a two-hour glucose tolerance test result of 140 to 199 mg/dL. Most people have no symptoms, which is why it often goes unnoticed for years.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Most Likely to Develop It?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Most Likely to Develop It?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Prediabetes is very common among adults in the United States, and many people who have it do not know. Risk is higher if you:
         </p>
@@ -90,7 +84,7 @@ export default function Page() {
           Some groups face higher risk for reasons that include genetics and access to care. Talk with your clinician about whether screening makes sense for you, even if you feel well.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why It Matters</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why It Matters</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Without changes, a significant share of people with prediabetes go on to develop type 2 diabetes. Even before that point, higher blood sugar is linked with greater risk of heart disease and stroke. Type 2 diabetes itself can affect the eyes, kidneys, nerves and blood vessels.
         </p>
@@ -98,11 +92,11 @@ export default function Page() {
           That is the warning side. The opportunity side is just as real: this stage is when your body is still responsive to change.
         </p>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant,serif]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           The opportunity side is just as real: this stage is when your body is still responsive to change.
         </div>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           The landmark Diabetes Prevention Program trial followed adults with prediabetes and found that structured lifestyle changes, including healthier eating and regular physical activity leading to modest weight loss, reduced the risk of developing type 2 diabetes by about 58 percent over three years. The benefit was even larger in adults over 60. Follow-up studies have shown the protective effect can last for many years.
         </p>
@@ -110,7 +104,7 @@ export default function Page() {
           In some situations, a clinician may also discuss medication such as metformin. The right approach depends on your health history, so it is a conversation to have with your care team.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Steps You Can Start Now</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Steps You Can Start Now</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           You do not need a perfect plan. Small, steady habits tend to work better than dramatic overhauls.
         </p>
@@ -123,7 +117,7 @@ export default function Page() {
           Pick one or two changes to begin with. Once they feel routine, add another. Walking after meals is a simple place to start, since muscle activity helps your body use sugar.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Getting Support</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Getting Support</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           A prediabetes result is not a verdict and it is not your fault. Having a primary care team to review your labs, set realistic goals and check in over time can make the difference between good intentions and lasting change.
         </p>
@@ -148,11 +142,11 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant,serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg transition-shadow">
-                <h4 className="font-[Cormorant,serif] text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
+                <h4 className="font-cormorant text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
                 <p className="text-[var(--color-muted)] mb-4">{r.text}</p>
                 <span className="text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] transition-colors">Read more →</span>
               </a>
@@ -162,7 +156,7 @@ export default function Page() {
       </section>
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center px-6">
-        <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+        <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
         <p className="mb-8 text-white/80">We are here to help.</p>
         <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">Contact Us</a>
       </section>

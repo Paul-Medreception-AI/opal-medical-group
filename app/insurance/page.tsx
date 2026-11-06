@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Insurance & Billing | Opal Medical Group Hagerstown',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/insurance',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Insurance & Billing | Opal Medical Group Hagerstown',
     description: 'Learn how insurance verification, billing, and self-pay estimates work at Opal Medical Group, your primary care office in Hagerstown, MD.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -85,17 +86,17 @@ const faqs = [
 export default function InsurancePage() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light">Insurance &amp; Billing</h1>
+      <SplitHero src="/images/stock/hub-insurance.jpg" alt="A smiling woman holds up an insurance card">
+        <div>
+          <h1 className="font-cormorant text-5xl font-light">Insurance &amp; Billing</h1>
           <p className="mt-4 text-lg text-white/90">Transparent pricing and billing information</p>
         </div>
-      </section>
+      </SplitHero>
 
       {/* The real accepted-carrier list must be supplied by the practice before any carrier is named on this page. */}
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl text-center mb-16 text-[var(--color-primary)]">Accepted Insurance Plans</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-16 text-[var(--color-primary)]">Accepted Insurance Plans</h2>
           <div className="animate-fade-up max-w-3xl mx-auto bg-white border border-[var(--color-border)] rounded-2xl p-10 text-center">
             <div className="flex justify-center text-[var(--color-accent)] mb-4">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -108,7 +109,7 @@ export default function InsurancePage() {
             <p className="mt-4 text-[var(--color-ink)] leading-relaxed">
               Self-pay patients are welcome and receive an estimate up front.
             </p>
-            <a href="tel:2404202666" className="inline-block mt-8 rounded-full bg-[var(--color-accent)] px-8 py-3 text-white font-medium transition-colors hover:bg-[var(--color-accent-dark)]">
+            <a href="tel:+12404202666" data-ga="phone_click" className="inline-block mt-8 rounded-full bg-[var(--color-accent)] px-8 py-3 text-white font-medium transition-colors hover:bg-[var(--color-accent-dark)]">
               Call (240) 420-2666
             </a>
           </div>
@@ -117,13 +118,13 @@ export default function InsurancePage() {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl text-center mb-16 text-[var(--color-primary)]">How Billing Works</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-16 text-[var(--color-primary)]">How Billing Works</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
               <div key={s.title} className="animate-fade-up bg-[var(--color-cream)] border border-[var(--color-border)] rounded-2xl p-8 text-center transition-shadow hover:shadow-lg">
                 <div className="flex justify-center text-[var(--color-accent)] mb-4">{s.icon}</div>
                 <p className="text-sm text-[var(--color-muted)]">Step {i + 1}</p>
-                <h3 className="font-[Cormorant_Garamond,serif] text-2xl text-[var(--color-dark)] mt-1">{s.title}</h3>
+                <h3 className="font-cormorant text-2xl text-[var(--color-dark)] mt-1">{s.title}</h3>
                 <p className="mt-3 text-[var(--color-muted)] leading-relaxed">{s.text}</p>
               </div>
             ))}
@@ -132,7 +133,7 @@ export default function InsurancePage() {
       </section>
 
       <section className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto mx-6 my-20">
-        <h3 className="font-[Cormorant_Garamond,serif] text-3xl text-[var(--color-dark)]">Self-Pay Options</h3>
+        <h3 className="font-cormorant text-3xl text-[var(--color-dark)]">Self-Pay Options</h3>
         <p className="mt-4 text-[var(--color-ink)] leading-relaxed">
           If you do not have insurance, or choose not to use it, you are welcome here. Before your care, you can request a good faith estimate of the expected costs so there are no surprises.
         </p>
@@ -143,7 +144,7 @@ export default function InsurancePage() {
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl text-center mb-12 text-[var(--color-primary)]">Billing Questions</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-12 text-[var(--color-primary)]">Billing Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="animate-fade-up group bg-white border border-[var(--color-border)] rounded-xl p-6">
@@ -157,7 +158,7 @@ export default function InsurancePage() {
 
       <section className="bg-[var(--color-primary)] py-20 text-center text-white">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light">Questions About Coverage?</h2>
+          <h2 className="font-cormorant text-4xl font-light">Questions About Coverage?</h2>
           <p className="mt-4 text-white/90">Reach out and our team will help you understand your options before your visit.</p>
           <a href="/contact" className="inline-block mt-8 rounded-full bg-[var(--color-accent-dark)] px-8 py-3 font-medium text-white transition-colors hover:bg-[var(--color-ink)]">
             Book Appointment

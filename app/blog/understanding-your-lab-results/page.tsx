@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Understanding Your Lab Results | Opal Medical Group',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/blog/understanding-your-lab-results',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Understanding Your Lab Results | Opal Medical Group',
     description: 'Learn how to read common blood test results, what reference ranges mean, and which questions to ask your primary care clinician about your lab report.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -37,51 +38,44 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-understanding-your-lab-results.jpg" alt="A blood sample tube placed on a chemistry panel document, showcasing medical testing.">
+        <div>
           <nav className="text-sm text-white/80 mb-6">
             <a href="/" className="hover:underline">Home</a> › <a href="/blog" className="hover:underline">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Your Lab Results</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Understanding Your Lab Results</h1>
           <p className="mt-6 text-white/80 text-sm">Published November 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-understanding-your-lab-results.jpg"} alt={"A blood sample tube placed on a chemistry panel document, showcasing medical testing."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6 text-[var(--color-ink)] leading-loose text-base">
         <p className="animate-fade-up">You open a patient portal or a envelope and see rows of abbreviations, numbers and a few flagged values. Your heart skips. It is completely normal to feel anxious when you cannot tell whether a result is a small blip or something that matters. The good news is that most lab reports follow a logical pattern, and a little background can turn confusion into a useful conversation with your clinician.</p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Lab Tests Actually Measure</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Lab Tests Actually Measure</h2>
         <p>Blood and urine tests give a snapshot of what is happening inside your body at one moment in time. They can show how well your organs are working, how your body handles sugar and fat, whether you have enough of certain nutrients, and whether there are signs of inflammation or infection. Doctors use them for screening when you feel well, for diagnosing symptoms, and for monitoring chronic conditions.</p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">How to Read a Lab Report</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How to Read a Lab Report</h2>
         <p>Most reports list the test name, your result, the units, a reference range, and sometimes a flag such as H (high) or L (low). The reference range is the span of values seen in a large group of healthy people, usually the middle 95 percent. That means roughly one in twenty healthy people will fall slightly outside the range on any single test without having a problem.</p>
         <p className="mt-4">Units matter too. Glucose, for example, may be reported in mg/dL, and the same number means something very different in another unit. Always read the number together with its unit and range.</p>
 
-        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant]">
+        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           A result outside the reference range is a prompt for a question, not a diagnosis.
         </blockquote>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Panels and What They Tell You</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Panels and What They Tell You</h2>
         <p><strong>Complete blood count (CBC).</strong> Counts red cells, white cells and platelets. It can point toward anemia, infection or clotting issues.</p>
         <p className="mt-4"><strong>Basic or comprehensive metabolic panel.</strong> Looks at blood sugar, electrolytes such as sodium and potassium, and kidney function markers like creatinine. The comprehensive version adds liver enzymes and proteins.</p>
         <p className="mt-4"><strong>Lipid panel.</strong> Reports total cholesterol, LDL, HDL and triglycerides, which help estimate cardiovascular risk.</p>
         <p className="mt-4"><strong>Hemoglobin A1C.</strong> Reflects average blood sugar over about three months and is used to screen for and monitor diabetes.</p>
         <p className="mt-4"><strong>Thyroid tests.</strong> TSH is commonly the first test used to see whether the thyroid is underactive or overactive.</p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why a Single Number Rarely Tells the Whole Story</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why a Single Number Rarely Tells the Whole Story</h2>
         <p>Many things can nudge a result: dehydration, a recent illness, intense exercise, time of day, certain medicines, supplements such as biotin, and whether you fasted. Your own trend over time is often more informative than one value. A cholesterol number that has crept up over three years tells a different story than one that has always sat in the same place.</p>
         <p className="mt-4">Clinical guidelines also consider your age, family history, blood pressure and other health conditions. That is why the same result can call for reassurance in one person and a plan in another. Research consistently supports interpreting tests in context rather than in isolation, which also helps avoid unnecessary follow-up testing.</p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Steps When Your Results Arrive</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Steps When Your Results Arrive</h2>
         <ul className="space-y-3">
           {tips.map((t) => (
             <li key={t} className="flex gap-3 items-start">
@@ -91,7 +85,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Try Not to Search Your Way Into Worry</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Try Not to Search Your Way Into Worry</h2>
         <p>Searching each abnormal value online can lead to worst-case scenarios that rarely match your situation. Instead, save your questions for someone who knows your history. Helpful ones include: What does this result mean for me? Is it a change from before? Do we need to repeat it? Are lifestyle changes, medication or further testing appropriate?</p>
 
         <p className="mt-8">If you have results you do not understand, Opal Medical Group in Hagerstown, MD is here to help you make sense of them. Our practice offers preventive and annual health exams and telehealth visits, and we are currently accepting new patients. Call (240) 420-2666 or contact us to talk through your next step.</p>
@@ -111,11 +105,11 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.title} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
-                <h4 className="font-[Cormorant] text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
+                <h4 className="font-cormorant text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
                 <p className="text-[var(--color-muted)] text-sm mb-4">{r.desc}</p>
                 <span className="text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] text-sm font-medium">Read more →</span>
               </a>
@@ -126,7 +120,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/90">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full font-medium">Contact Us</a>
         </div>

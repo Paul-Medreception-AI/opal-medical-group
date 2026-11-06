@@ -2,6 +2,9 @@
 // lib/data/blog.ts, which holds exactly the posts that exist, so it cannot link to a
 // post that is not there or leave one out.
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
+import Image from 'next/image'
+import { focus } from '@/lib/imageFocus'
 import { BLOG_POSTS } from '../../lib/data/blog'
 
 const TITLE = "Health Articles | Opal Medical Group"
@@ -12,33 +15,33 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: URL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, siteName: "Opal Medical Group", type: 'website', images: [{ url: "/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg" }] },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ["/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg"] },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, siteName: "Opal Medical Group", type: 'website', images: [{ url: "/images/stock/hero-home.jpg" }] },
+  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ["/images/stock/hero-home.jpg"] },
 }
 
 export default function BlogIndexPage() {
   const [featured, ...rest] = BLOG_POSTS
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-blog.jpg" alt="A clinician writes notes during a consultation">
+        <div>
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>
             <span>Resources</span>
           </nav>
           <h1 className="font-cormorant text-5xl md:text-6xl font-light">Health Articles</h1>
-          <p className="text-xl text-white/85 max-w-2xl mx-auto mt-4 leading-relaxed">Clear, practical information to help you make informed decisions about your health.</p>
+          <p className="text-xl text-white/85 max-w-2xl mt-4 leading-relaxed">Clear, practical information to help you make informed decisions about your health.</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-7xl mx-auto px-6">
           {featured ? (
             <a href={'/blog/' + featured.slug} className="group block bg-white rounded-2xl p-10 border border-[var(--color-border)] shadow-sm hover:shadow-xl transition-all duration-300">
               {featured.image ? (
-                <div className="w-full -mt-2 mb-8 rounded-xl overflow-hidden bg-[var(--color-light)]">
-                  <img src={featured.image.src} alt={featured.image.alt || featured.title} className="block w-full h-auto" />
+                <div className="relative h-64 sm:h-80 lg:h-full min-h-[16rem] bg-[var(--color-light)] overflow-hidden">
+                  <Image src={featured.image.src} alt={featured.image.alt || featured.title} fill priority sizes="(max-width: 1024px) 100vw, 600px" className="object-cover" style={{ objectPosition: focus(featured.image.src) }} />
                 </div>
               ) : null}
               <p className="text-xs uppercase tracking-widest text-[var(--color-primary)]">Featured article</p>
@@ -57,9 +60,9 @@ export default function BlogIndexPage() {
               {rest.map((p) => (
                 <a key={p.slug} href={'/blog/' + p.slug} className="group block bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   {p.image ? (
-                    <div className="w-full bg-[var(--color-light)] overflow-hidden">
-                      <img src={p.image.src} alt={p.image.alt || p.title} loading="lazy" className="block w-full h-auto group-hover:scale-105 transition-transform duration-500" />
-                    </div>
+                    <div className="relative h-48 bg-[var(--color-light)] overflow-hidden">
+                  <Image src={p.image.src} alt={p.image.alt || p.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px" className="object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focus(p.image.src) }} />
+                </div>
                   ) : null}
                   <div className="p-8">
                   <h2 className="font-cormorant text-2xl font-semibold text-[var(--color-ink)] leading-snug">{p.title}</h2>

@@ -1,6 +1,6 @@
 import type { ConditionPageContent } from '@/components/templates/ConditionPageTemplate'
 
-const BASE = {"siteUrl":"https://opalmedicalgroup.com","siteName":"Opal Medical Group","ctaLabel":"Schedule an Appointment","ctaHref":"/contact","hubLabel":"Conditions","hubHref":"/conditions","ogImage":"/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg"};
+const BASE = {"siteUrl":"https://opalmedicalgroup.com","siteName":"Opal Medical Group","ctaLabel":"Schedule an Appointment","ctaHref":"/contact","hubLabel":"Conditions","hubHref":"/conditions","ogImage":"/images/stock/hero-home.jpg"};
 
 export const CONDITIONS: ConditionPageContent[] = [
   {

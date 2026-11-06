@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/locations/hagerstown-md',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Primary Care Hagerstown MD | Opal Medical Group',
     description: 'Looking for primary care in Hagerstown, MD? Opal Medical Group at 1126 Opal Ct offers annual exams, telehealth and medication management. New patients welcome.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -64,32 +65,25 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-28 text-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/hero-locations.jpg" alt="Rolling hills and autumn foliage in the countryside">
+        <div>
           <nav className="text-sm mb-6 text-white/80">
             <Link href="/" className="hover:underline">Home</Link> › Locations › Hagerstown, MD
           </nav>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light mb-6">Primary Care Near Hagerstown, MD</h1>
+          <h1 className="font-cormorant text-5xl font-light mb-6">Primary Care Near Hagerstown, MD</h1>
           <p className="text-xl text-white/90 mb-8">Serving patients from Hagerstown and surrounding MD communities.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full font-medium">
             Schedule in Hagerstown
           </Link>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/location-hagerstown-md.jpg"} alt={"Charming brick-lined street in Annapolis, Maryland captured during twilight with historic buildings and street lamps."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-4xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant,serif] text-4xl text-[var(--color-primary)] mb-6">Serving the Hagerstown Area</h2>
+          <h2 className="font-cormorant text-4xl text-[var(--color-primary)] mb-6">Serving the Hagerstown Area</h2>
           <p className="text-[var(--color-ink)] mb-4 leading-relaxed">
-            Opal Medical Group is located at 1126 Opal Ct, Hagerstown, MD 21740. Patients coming from Hagerstown can enter our address in a maps app for up-to-date directions. Our office is open Monday 8:00 AM–5:30 PM, Tuesday and Wednesday 8:00 AM–5:00 PM, Thursday 7:30 AM–8:30 PM, and Friday 8:00 AM–4:30 PM.
+            Opal Medical Group is located at 1126 Opal Ct, Hagerstown, MD 21740. Patients coming from Hagerstown can enter our address in a maps app for up-to-date directions. Our office is open Monday through Friday, 8:00 AM to 5:00 PM.
           </p>
           <p className="text-[var(--color-ink)] mb-8 leading-relaxed">
             Patients from Hagerstown can expect a welcoming primary care experience with Yi Vance, CRNP, Dr. Farid Murshed, MD, and Dr. M. Khalid Waseem, MD, CMD. When getting to the office is not convenient, telehealth is available as an option for appropriate visits. Call (240) 420-2666 with questions.
@@ -105,7 +99,7 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-[var(--color-primary)] mb-12">Services Available to Hagerstown Patients</h2>
+          <h2 className="font-cormorant text-4xl text-[var(--color-primary)] mb-12">Services Available to Hagerstown Patients</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((s) => (
               <div key={s.title} className="animate-fade-up bg-[var(--color-cream)] border border-[var(--color-border)] rounded-2xl p-8 hover:shadow-lg transition-shadow">
@@ -114,7 +108,7 @@ export default function Page() {
                     <path strokeLinecap="round" strokeLinejoin="round" d={s.icon} />
                   </svg>
                 </div>
-                <h3 className="font-[Cormorant,serif] text-2xl text-[var(--color-dark)] mb-3">{s.title}</h3>
+                <h3 className="font-cormorant text-2xl text-[var(--color-dark)] mb-3">{s.title}</h3>
                 <p className="text-[var(--color-muted)] mb-4 leading-relaxed">{s.desc}</p>
                 <Link href={s.href} className="text-[var(--color-accent)] hover:text-[var(--color-accent-dark)] font-medium transition-colors">Learn More →</Link>
               </div>
@@ -124,7 +118,7 @@ export default function Page() {
       </section>
 
       <section className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20">
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-primary)] mb-4">Can&apos;t Make the Drive? We Offer Telehealth</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-primary)] mb-4">Can&apos;t Make the Drive? We Offer Telehealth</h2>
         <p className="text-[var(--color-ink)] leading-relaxed mb-4">
           Hagerstown residents can use telehealth for appropriate visits, including medication management and follow-up conversations with their provider. All you need is a device with internet access and a private space.
         </p>
@@ -135,11 +129,11 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-[var(--color-primary)] mb-10">Hagerstown Patient FAQ</h2>
+          <h2 className="font-cormorant text-4xl text-[var(--color-primary)] mb-10">Hagerstown Patient FAQ</h2>
           <div className="space-y-6">
             {faqs.map((f) => (
               <div key={f.q} className="animate-fade-up bg-white border border-[var(--color-border)] rounded-2xl p-6">
-                <h3 className="font-[Cormorant,serif] text-2xl text-[var(--color-dark)] mb-2">{f.q}</h3>
+                <h3 className="font-cormorant text-2xl text-[var(--color-dark)] mb-2">{f.q}</h3>
                 <p className="text-[var(--color-muted)] leading-relaxed">{f.a}</p>
               </div>
             ))}
@@ -149,7 +143,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-6">Get Expert Care from Hagerstown</h2>
+          <h2 className="font-cormorant text-4xl mb-6">Get Expert Care from Hagerstown</h2>
           <p className="text-white/90 mb-8">Opal Medical Group is currently accepting new patients.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full font-medium">
             Contact Us

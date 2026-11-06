@@ -17,8 +17,8 @@ const rows = (hub: string, list: Row[]): NavItem[] => list.map((r) => ({ href: h
 
 const NAME = "Opal Medical Group"
 const LOGO: string | null = "/logo.png"
-const CTA = {"href":"/contact","label":"Book Appointment"}
-const PHONE: { href: string; label: string } | null = {"href":"tel:2404202666","label":"(240) 420-2666"}
+const CTA = {"href":"/contact#form","label":"Book Appointment"}
+const PHONE: { href: string; label: string } | null = {"href":"tel:+12404202666","label":"(240) 420-2666"}
 
 const NAV: NavGroup[] = [
   { href: "/services", label: "Services", items: [...rows("/services", SERVICES)], footer: {"href":"/services","label":"All services"} },
@@ -43,7 +43,7 @@ export default function SiteHeader() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between gap-4">
         <a href="/" className="flex items-center min-w-0" aria-label={NAME + ', home'}>
           {LOGO ? (
-            <img src={LOGO} alt={NAME} className="h-[66px] w-auto max-w-[min(330px,100%)] object-contain object-left" />
+            <img src={LOGO} alt={NAME} width={213} height={160} className="h-[66px] w-auto max-w-[min(330px,calc(100vw-7.5rem))] object-contain object-left" />
           ) : (
             <span className="font-cormorant text-xl line-clamp-2 font-semibold text-[var(--color-primary)] leading-tight max-w-[calc(100vw-6rem)] sm:max-w-[16rem]">{NAME}</span>
           )}
@@ -81,10 +81,7 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3 flex-shrink-0">
-          {PHONE ? (
-            <a href={PHONE.href} className="hidden 2xl:inline text-sm font-semibold text-[var(--color-primary)] whitespace-nowrap">{PHONE.label}</a>
-          ) : null}
-          <a href={CTA.href} className="hidden sm:inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap">
+          <a href={CTA.href} data-ga="consultation_click" className="hidden sm:inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap">
             {CTA.label}
           </a>
           <details className="xl:hidden">
@@ -115,9 +112,9 @@ export default function SiteHeader() {
                 )}
                 <div className="pt-3 grid gap-3">
                   {PHONE ? (
-                    <a href={PHONE.href} className="text-center border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-4 py-3 rounded-xl font-semibold text-sm">Call {PHONE.label}</a>
+                    <a href={PHONE.href} data-ga="phone_click" className="text-center border-2 border-[var(--color-primary)] text-[var(--color-primary)] px-4 py-3 rounded-xl font-semibold text-sm">Call {PHONE.label}</a>
                   ) : null}
-                  <a href={CTA.href} className="text-center bg-[var(--color-accent)] text-white px-4 py-3 rounded-xl font-semibold text-sm">{CTA.label}</a>
+                  <a href={CTA.href} data-ga="consultation_click" className="text-center bg-[var(--color-accent)] text-white px-4 py-3 rounded-xl font-semibold text-sm">{CTA.label}</a>
                 </div>
               </nav>
             </div>

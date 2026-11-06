@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -11,13 +12,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/new-patients',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'New Patients | Opal Medical Group in Hagerstown, MD',
     description: 'New to Opal Medical Group? Learn what to expect at your first primary care visit in Hagerstown, what to bring, which forms to expect, and how telehealth works.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -50,20 +51,20 @@ const Check = () => (
 export default function NewPatientsPage() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h1 className="font-[Cormorant,serif] text-5xl font-light">New Patients</h1>
+      <SplitHero src="/images/stock/hub-new-patients.jpg" alt="A clinician takes notes on a clipboard during an intake visit">
+        <div>
+          <h1 className="font-cormorant text-5xl font-light">New Patients</h1>
           <p className="mt-4 text-lg">Everything you need to know before your first visit</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-center mb-16 text-[var(--color-dark)]">Your First Visit</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-16 text-[var(--color-dark)]">Your First Visit</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((s) => (
               <div key={s.number} className="animate-fade-up bg-white rounded-2xl border border-[var(--color-border)] p-8">
-                <div className="font-[Cormorant,serif] text-6xl font-light text-[var(--color-primary)]">{s.number}</div>
+                <div className="font-cormorant text-6xl font-light text-[var(--color-primary)]">{s.number}</div>
                 <h3 className="mt-4 text-xl font-semibold text-[var(--color-ink)]">{s.title}</h3>
                 <p className="mt-2 text-[var(--color-muted)] leading-relaxed">{s.description}</p>
               </div>
@@ -74,7 +75,7 @@ export default function NewPatientsPage() {
 
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-center mb-12 text-[var(--color-dark)]">What to Bring</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-12 text-[var(--color-dark)]">What to Bring</h2>
           <ul className="grid gap-8 md:grid-cols-2">
             {bring.map((b) => (
               <li key={b.label} className="animate-fade-up flex gap-4">
@@ -90,7 +91,7 @@ export default function NewPatientsPage() {
       </section>
 
       <section className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20">
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-dark)]">Patient Forms</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-dark)]">Patient Forms</h2>
         <p className="mt-4 text-[var(--color-muted)]">Forms available at our office or can be completed at your first appointment.</p>
         <p className="mt-6 font-semibold text-[var(--color-ink)]">Forms you can expect:</p>
         <ul className="mt-4 space-y-4">
@@ -108,7 +109,7 @@ export default function NewPatientsPage() {
 
       <section className="bg-white py-16">
         <div className="animate-fade-up max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-[var(--color-dark)]">Telehealth Visits</h2>
+          <h2 className="font-cormorant text-4xl text-[var(--color-dark)]">Telehealth Visits</h2>
           <p className="mt-4 max-w-3xl text-[var(--color-muted)] leading-relaxed">
             Opal Medical Group offers telehealth and video visits for telehealth and medication management. You meet with your provider by video from home or another private place. Ask our office whether a video visit suits your concern.
           </p>
@@ -140,16 +141,16 @@ export default function NewPatientsPage() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-dark)]">Scheduling Questions</h2>
+          <h2 className="font-cormorant text-3xl text-[var(--color-dark)]">Scheduling Questions</h2>
           <p className="mt-4 text-[var(--color-muted)] leading-relaxed">
-            To reschedule or ask about the office&apos;s policies, please call us at (240) 420-2666. Office hours are Monday 8:00 AM–5:30 PM, Tuesday and Wednesday 8:00 AM–5:00 PM, Thursday 7:30 AM–8:30 PM, and Friday 8:00 AM–4:30 PM.
+            To reschedule or ask about the office&apos;s policies, please call us at (240) 420-2666. Office hours are Monday through Friday, 8:00 AM to 5:00 PM.
           </p>
         </div>
       </section>
 
       <section className="bg-[var(--color-primary)] py-20 text-center text-white">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light">Ready to Become a Patient?</h2>
+          <h2 className="font-cormorant text-4xl font-light">Ready to Become a Patient?</h2>
           <p className="mt-4">We are currently accepting new patients at 1126 Opal Ct, Hagerstown, MD 21740.</p>
           <Link href="/contact" className="mt-8 inline-block rounded-full bg-[var(--color-accent-dark)] px-8 py-3 font-semibold text-white transition-colors hover:bg-[var(--color-ink)]">
             Book Appointment

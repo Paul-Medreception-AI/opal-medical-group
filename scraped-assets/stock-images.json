@@ -1,687 +1,822 @@
 {
-  "note": "Page photos chosen by the website builder. Pexels photos are free to use (pexels.com/license); credit is appreciated, not required.",
-  "images": [
-    {
-      "page": "compare:physician-vs-nurse-practitioner",
-      "file": "public/images/stock/compare-physician-vs-nurse-practitioner.jpg",
-      "source": "scraped",
-      "alt": "Physician vs Nurse Practitioner: Who Should You See?",
-      "scraped_from": "https://cdn.prod.website-files.com/68a4bd68f1543da31a3e216f/68b5fc22195b2b7b7526b4f9_Nurse%20Practitioner%20Care.jpg"
-    },
-    {
-      "page": "services:age-related-screening",
-      "file": "public/images/stock/age-related-screening.jpg",
-      "source": "pexels",
-      "alt": "Healthcare professional checks senior's blood pressure at clinic for health assessment.",
-      "pexels_id": 39192356,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-measuring-blood-pressure-of-senior-patient-39192356/"
-    },
-    {
-      "page": "services:general-illness-injuries",
-      "file": "public/images/stock/general-illness-injuries.jpg",
-      "source": "pexels",
-      "alt": "Woman resting on a couch with head bandaged, surrounded by medicine. Indoor recovery scene.",
-      "pexels_id": 5207239,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/woman-with-head-bandage-lying-on-a-couch-5207239/"
-    },
-    {
-      "page": "services:chronic-disease-management",
-      "file": "public/images/stock/chronic-disease-management.jpg",
-      "source": "pexels",
-      "alt": "Hands measuring blood glucose levels with a glucose meter and test strip.",
-      "pexels_id": 7653134,
-      "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/close-up-of-hands-holding-glucose-meter-7653134/"
-    },
-    {
-      "page": "services:women-s-health",
-      "file": "public/images/stock/women-s-health.jpg",
-      "source": "pexels",
-      "alt": "Medical consultation with a doctor using a stethoscope for patient examination indoors.",
-      "pexels_id": 5214992,
-      "photographer": "Antoni Shkraba",
-      "pexels_url": "https://www.pexels.com/photo/doctor-checking-the-heart-of-a-woman-5214992/"
-    },
-    {
-      "page": "services:preventive-health",
-      "file": "public/images/stock/preventive-health.jpg",
-      "source": "pexels",
-      "alt": "A doctor performs a blood pressure check in a Lagos clinic, emphasizing healthcare.",
-      "pexels_id": 30678208,
-      "photographer": "Ninthgrid",
-      "pexels_url": "https://www.pexels.com/photo/medical-checkup-in-a-lagos-clinic-30678208/"
-    },
-    {
-      "page": "conditions:acid-reflux",
-      "file": "public/images/stock/acid-reflux.jpg",
-      "source": "pexels",
-      "alt": "Doctor with stethoscope examining a smiling patient indoors, promoting health and care.",
-      "pexels_id": 5215012,
-      "photographer": "Antoni Shkraba",
-      "pexels_url": "https://www.pexels.com/photo/doctor-checking-the-heart-beat-of-a-man-5215012/"
-    },
-    {
-      "page": "conditions:anemia",
-      "file": "public/images/stock/anemia.jpg",
-      "source": "pexels",
-      "alt": "Doctor checks blood pressure of a patient wearing a headscarf indoors, focused on healthcare.",
-      "pexels_id": 7659572,
-      "photographer": "Thirdman",
-      "pexels_url": "https://www.pexels.com/photo/a-doctor-taking-blood-pressure-of-a-patient-7659572/"
-    },
-    {
-      "page": "conditions:asthma",
-      "file": "public/images/stock/asthma.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a woman using an inhaler for respiratory health management.",
-      "pexels_id": 30425693,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/woman-using-inhaler-for-respiratory-relief-30425693/"
-    },
-    {
-      "page": "conditions:arthritis",
-      "file": "public/images/stock/arthritis.jpg",
-      "source": "pexels",
-      "alt": "Elderly person's hand pouring pills from a bottle, offering ample copy space.",
-      "pexels_id": 8395812,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/elderly-person-holding-a-bottle-of-tablets-8395812/"
-    },
-    {
-      "page": "conditions:back-pain",
-      "file": "public/images/stock/back-pain.jpg",
-      "source": "pexels",
-      "alt": "Tattooed man holding lower back in pain outdoors on a sunny day.",
-      "pexels_id": 7298613,
-      "photographer": "Kindel Media",
-      "pexels_url": "https://www.pexels.com/photo/back-view-shot-of-a-person-massaging-his-own-back-7298613/"
-    },
-    {
-      "page": "conditions:chronic-fatigue",
-      "file": "public/images/stock/chronic-fatigue.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a woman with a headache, hand on forehead, in a comfortable setting.",
-      "pexels_id": 5979728,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/woman-suffering-from-headache-5979728/"
-    },
-    {
-      "page": "conditions:copd",
-      "file": "public/images/stock/copd.jpg",
-      "source": "pexels",
-      "alt": "Middle-aged man using an inhaler to manage respiratory issues indoors.",
-      "pexels_id": 30428329,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/man-using-inhaler-for-respiratory-health-30428329/"
-    },
-    {
-      "page": "conditions:hypertension",
-      "file": "public/images/stock/hypertension.jpg",
-      "source": "pexels",
-      "alt": "Doctor checking blood pressure of patient at medical clinic.",
-      "pexels_id": 39192345,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-measuring-patient-s-blood-pressure-in-office-39192345/"
-    },
-    {
-      "page": "conditions:bronchitis",
-      "file": "public/images/stock/bronchitis.jpg",
-      "source": "pexels",
-      "alt": "A close-up image of a man using an inhaler, highlighting respiratory health concepts.",
-      "pexels_id": 30425668,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/close-up-of-man-using-inhaler-for-asthma-relief-30425668/"
-    },
-    {
-      "page": "conditions:high-cholesterol",
-      "file": "public/images/stock/high-cholesterol.jpg",
-      "source": "pexels",
-      "alt": "A close-up shot of medical equipment including blood pressure monitor and pills on an ECG graph.",
-      "pexels_id": 32417921,
-      "photographer": "Marta Branco",
-      "pexels_url": "https://www.pexels.com/photo/blood-pressure-monitor-and-medical-equipment-close-up-32417921/"
-    },
-    {
-      "page": "conditions:irregular-menstrual-cycles",
-      "file": "public/images/stock/irregular-menstrual-cycles.jpg",
-      "source": "pexels",
-      "alt": "A menstrual cup with spilled blood on a pink surface, symbolizing menstruation and women's health.",
-      "pexels_id": 7692046,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/blood-on-a-menstrual-cup-7692046/"
-    },
-    {
-      "page": "conditions:menopause-symptoms",
-      "file": "public/images/stock/menopause-symptoms.jpg",
-      "source": "pexels",
-      "alt": "Two women enjoying a day outdoors, toasting with coffee in a sunny setting.",
-      "pexels_id": 6539976,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/healthy-fashion-beach-sunglasses-6539976/"
-    },
-    {
-      "page": "conditions:influenza",
-      "file": "public/images/stock/influenza.jpg",
-      "source": "pexels",
-      "alt": "Thermometer with crumpled tissues on denim fabric, evoking themes of sickness and care.",
-      "pexels_id": 3873200,
-      "photographer": "Polina Tankilevitch",
-      "pexels_url": "https://www.pexels.com/photo/thermometer-on-blanket-3873200/"
-    },
-    {
-      "page": "conditions:minor-cuts-and-sprains",
-      "file": "public/images/stock/minor-cuts-and-sprains.jpg",
-      "source": "pexels",
-      "alt": "Close-up of hands, one grasping the other, symbolizing pain or discomfort.",
-      "pexels_id": 12460181,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/a-person-holding-own-hand-12460181/"
-    },
-    {
-      "page": "conditions:obesity-and-weight-management",
-      "file": "public/images/stock/obesity-and-weight-management.jpg",
-      "source": "pexels",
-      "alt": "Minimalist photograph of motivational cards with healthy lifestyle messages on a white background.",
-      "pexels_id": 6669474,
-      "photographer": "Moe Magners",
-      "pexels_url": "https://www.pexels.com/photo/poster-on-the-wall-6669474/"
-    },
-    {
-      "page": "conditions:osteoarthritis",
-      "file": "public/images/stock/osteoarthritis.jpg",
-      "source": "pexels",
-      "alt": "Experienced doctor consulting a patient in a medical office setting.",
-      "pexels_id": 39192333,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/senior-doctor-consulting-patient-in-office-39192333/"
-    },
-    {
-      "page": "conditions:prediabetes",
-      "file": "public/images/stock/prediabetes.jpg",
-      "source": "pexels",
-      "alt": "Doctor in white coat consulting patient in a modern office setting.",
-      "pexels_id": 39192395,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-consulting-patient-in-modern-office-39192395/"
-    },
-    {
-      "page": "conditions:seasonal-allergies",
-      "file": "public/images/stock/seasonal-allergies.jpg",
-      "source": "pexels",
-      "alt": "Small child with lowered face mask covering face by hands while sneezing on street",
-      "pexels_id": 4000624,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/shallow-focus-photo-of-a-girl-sneezing-4000624/"
-    },
-    {
-      "page": "conditions:osteoporosis-risk",
-      "file": "public/images/stock/osteoporosis-risk.jpg",
-      "source": "pexels",
-      "alt": "Medical arrangement of osteoporosis treatment tools with injections and pills.",
-      "pexels_id": 32849865,
-      "photographer": "Marta Branco",
-      "pexels_url": "https://www.pexels.com/photo/osteoporosis-treatment-and-medication-overview-32849865/"
-    },
-    {
-      "page": "conditions:sinus-infections",
-      "file": "public/images/stock/sinus-infections.jpg",
-      "source": "pexels",
-      "alt": "Assortment of cold and flu medications on a pharmacy counter.",
-      "pexels_id": 30336149,
-      "photographer": "Christina & Peter",
-      "pexels_url": "https://www.pexels.com/photo/over-the-counter-pharmacy-medications-display-30336149/"
-    },
-    {
-      "page": "conditions:thyroid-disorders",
-      "file": "public/images/stock/thyroid-disorders.jpg",
-      "source": "pexels",
-      "alt": "A doctor in a white coat consults a smiling patient against a pink backdrop.",
-      "pexels_id": 7659873,
-      "photographer": "Thirdman",
-      "pexels_url": "https://www.pexels.com/photo/doctor-consulting-a-patient-7659873/"
-    },
-    {
-      "page": "conditions:skin-rashes",
-      "file": "public/images/stock/skin-rashes.jpg",
-      "source": "pexels",
-      "alt": "A close-up of a hand with a skin condition holding a potted aloe vera plant against a green background.",
-      "pexels_id": 9507051,
-      "photographer": "ROCKETMANN TEAM",
-      "pexels_url": "https://www.pexels.com/photo/person-holding-green-potted-plant-9507051/"
-    },
-    {
-      "page": "conditions:type-2-diabetes",
-      "file": "public/images/stock/type-2-diabetes.jpg",
-      "source": "pexels",
-      "alt": "Flat lay of a diabetes monitoring kit with syringes and glucose meter on a blue background.",
-      "pexels_id": 6941878,
-      "photographer": "Nataliya Vaitkevich",
-      "pexels_url": "https://www.pexels.com/photo/symbols-for-world-diabetes-day-awareness-6941878/"
-    },
-    {
-      "page": "conditions:vitamin-d-deficiency",
-      "file": "public/images/stock/vitamin-d-deficiency.jpg",
-      "source": "pexels",
-      "alt": "A close-up image of vitamin tablets spilling out of a transparent brown bottle on a wooden surface.",
-      "pexels_id": 11348080,
-      "photographer": "Picas Joe",
-      "pexels_url": "https://www.pexels.com/photo/medicine-tablet-on-a-wooden-surface-in-close-up-photography-11348080/"
-    },
-    {
-      "page": "conditions:urinary-tract-infections",
-      "file": "public/images/stock/urinary-tract-infections.jpg",
-      "source": "pexels",
-      "alt": "Close-up of healthcare worker applying hand sanitizer with a spray bottle for hygiene.",
-      "pexels_id": 5234494,
-      "photographer": "Polina Tankilevitch",
-      "pexels_url": "https://www.pexels.com/photo/person-holding-a-spray-bottle-with-liquid-5234494/"
-    },
-    {
-      "page": "compare:annual-physical-vs-problem-focused-visit",
-      "file": "public/images/stock/compare-annual-physical-vs-problem-focused-visit.jpg",
-      "source": "pexels",
-      "alt": "Senior man consulting with female doctor in a colorful office setting.",
-      "pexels_id": 39192354,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-and-patient-consultation-in-modern-office-39192354/"
-    },
-    {
-      "page": "compare:preventive-screening-vs-diagnostic-testing",
-      "file": "public/images/stock/compare-preventive-screening-vs-diagnostic-testing.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a healthcare worker performing a blood test using sterile gloves.",
-      "pexels_id": 6285353,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/a-person-taking-a-blood-glucose-test-6285353/"
-    },
-    {
-      "page": "locations:hagerstown-md",
-      "file": "public/images/stock/location-hagerstown-md.jpg",
-      "source": "pexels",
-      "alt": "Charming brick-lined street in Annapolis, Maryland captured during twilight with historic buildings and street lamps.",
-      "pexels_id": 40214513,
-      "photographer": "Tristan W",
-      "pexels_url": "https://www.pexels.com/photo/historic-annapolis-street-at-twilight-40214513/"
-    },
-    {
-      "page": "blog:anemia-and-fatigue-what-is-the-connection",
-      "file": "public/images/stock/blog-anemia-and-fatigue-what-is-the-connection.jpg",
-      "source": "pexels",
-      "alt": "A woman lying on a sofa showing visible stress and emotion, clutching a pillow.",
-      "pexels_id": 5616229,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/sad-woman-in-black-shirt-lying-on-pillow-on-a-sofa-5616229/"
-    },
-    {
-      "page": "blog:back-pain-when-to-seek-care",
-      "file": "public/images/stock/blog-back-pain-when-to-seek-care.jpg",
-      "source": "pexels",
-      "alt": "From above of crop faceless slim female patient sitting on examination couch and indicating osteopath in uniform pain spot on back in clinic",
-      "pexels_id": 4506109,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/doctor-examines-woman-s-back-4506109/"
-    },
-    {
-      "page": "compare:lifestyle-changes-vs-medication-prediabetes",
-      "file": "public/images/stock/compare-lifestyle-changes-vs-medication-prediabetes.jpg",
-      "source": "pexels",
-      "alt": "Close-up of diabetes management tools including glucometer and pills on a pink background.",
-      "pexels_id": 8965152,
-      "photographer": "Nataliya Vaitkevich",
-      "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-glucometer-beside-capsules-8965152/"
-    },
-    {
-      "page": "compare:primary-care-vs-urgent-care",
-      "file": "public/images/stock/compare-primary-care-vs-urgent-care.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a modern hospital emergency room entrance with prominent red letters.",
-      "pexels_id": 263402,
-      "photographer": "Pixabay",
-      "pexels_url": "https://www.pexels.com/photo/emergency-signage-263402/"
-    },
-    {
-      "page": "blog:bone-health-and-osteoporosis-prevention",
-      "file": "public/images/stock/blog-bone-health-and-osteoporosis-prevention.jpg",
-      "source": "pexels",
-      "alt": "Doctor examining a skull X-ray image on a digital tablet indoors.",
-      "pexels_id": 39192338,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-analyzing-x-ray-on-digital-tablet-39192338/"
-    },
-    {
-      "page": "blog:cholesterol-basics-numbers-that-matter",
-      "file": "public/images/stock/blog-cholesterol-basics-numbers-that-matter.jpg",
-      "source": "pexels",
-      "alt": "Wooden numbers with colorful blocks on vibrant red surface.",
-      "pexels_id": 1329293,
-      "photographer": "Magda Ehlers",
-      "pexels_url": "https://www.pexels.com/photo/123456-wall-decor-1329293/"
-    },
-    {
-      "page": "blog:building-a-long-term-relationship-with-your-provider",
-      "file": "public/images/stock/blog-building-a-long-term-relationship-with-your-provider.jpg",
-      "source": "pexels",
-      "alt": "A doctor uses a stethoscope to examine a young boy with his mother present in a medical office.",
-      "pexels_id": 39192343,
-      "photographer": "Vitaly Gariev",
-      "pexels_url": "https://www.pexels.com/photo/doctor-conducting-medical-examination-on-young-boy-39192343/"
-    },
-    {
-      "page": "blog:cold-flu-or-allergies-how-to-tell",
-      "file": "public/images/stock/blog-cold-flu-or-allergies-how-to-tell.jpg",
-      "source": "pexels",
-      "alt": "Small sick redhead kid with eyes closed cleaning nose with white tissue paper while lying alone in bed in light modern bedroom in daytime",
-      "pexels_id": 3765115,
-      "photographer": "Andrea Piacquadio",
-      "pexels_url": "https://www.pexels.com/photo/a-sick-girl-wiping-her-nose-with-tissue-3765115/"
-    },
-    {
-      "page": "blog:healthy-aging-staying-active-and-independent",
-      "file": "public/images/stock/blog-healthy-aging-staying-active-and-independent.jpg",
-      "source": "pexels",
-      "alt": "Elderly man in blue shirt lifting dumbbells near laptop, embracing home fitness.",
-      "pexels_id": 8899509,
-      "photographer": "SHVETS production",
-      "pexels_url": "https://www.pexels.com/photo/an-elderly-man-in-blue-shirt-holding-a-dumbbells-8899509/"
-    },
-    {
-      "page": "blog:healthy-eating-for-chronic-condition-management",
-      "file": "public/images/stock/blog-healthy-eating-for-chronic-condition-management.jpg",
-      "source": "pexels",
-      "alt": "A senior man supported by a volunteer with groceries at home.",
-      "pexels_id": 7551581,
-      "photographer": "Kampus Production",
-      "pexels_url": "https://www.pexels.com/photo/an-elderly-man-holding-leafy-vegetables-7551581/"
-    },
-    {
-      "page": "blog:healthy-habits-for-the-whole-family",
-      "file": "public/images/stock/blog-healthy-habits-for-the-whole-family.jpg",
-      "source": "pexels",
-      "alt": "A young girl with curly hair brushes her teeth at a sink, promoting dental hygiene.",
-      "pexels_id": 8762987,
-      "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/girl-brushing-her-teeth-8762987/"
-    },
-    {
-      "page": "blog:heartburn-and-acid-reflux-explained",
-      "file": "public/images/stock/blog-heartburn-and-acid-reflux-explained.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a red stethoscope symbolizing medical care and healthcare diagnostics.",
-      "pexels_id": 5149754,
-      "photographer": "Roger Brown",
-      "pexels_url": "https://www.pexels.com/photo/stethoscope-on-white-surface-5149754/"
-    },
-    {
-      "page": "blog:how-to-prepare-for-a-primary-care-visit",
-      "file": "public/images/stock/blog-how-to-prepare-for-a-primary-care-visit.jpg",
-      "source": "pexels",
-      "alt": "Two female doctors in masks assist a child in a bright medical room.",
-      "pexels_id": 7446997,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/little-girl-at-a-medical-checkup-7446997/"
-    },
-    {
-      "page": "blog:managing-asthma-through-the-seasons",
-      "file": "public/images/stock/blog-managing-asthma-through-the-seasons.jpg",
-      "source": "pexels",
-      "alt": "Close-up of an adult using an inhaler for asthma management.",
-      "pexels_id": 29702937,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/adult-using-inhaler-for-asthma-relief-29702937/"
-    },
-    {
-      "page": "blog:managing-arthritis-pain",
-      "file": "public/images/stock/blog-managing-arthritis-pain.jpg",
-      "source": "pexels",
-      "alt": "Person sitting on sofa, holding knee in pain. Indoor lifestyle health concept.",
-      "pexels_id": 11349880,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/person-feeling-pain-in-the-knee-11349880/"
-    },
-    {
-      "page": "blog:managing-type-2-diabetes-day-to-day",
-      "file": "public/images/stock/blog-managing-type-2-diabetes-day-to-day.jpg",
-      "source": "pexels",
-      "alt": "Top view of diabetes management tools including glucose meter and insulin syringes on purple background.",
-      "pexels_id": 6941102,
-      "photographer": "Nataliya Vaitkevich",
-      "pexels_url": "https://www.pexels.com/photo/diabetic-kit-and-insulin-over-a-purple-surface-6941102/"
-    },
-    {
-      "page": "blog:medication-management-tips",
-      "file": "public/images/stock/blog-medication-management-tips.jpg",
-      "source": "pexels",
-      "alt": "Senior adult organizing daily medications using a weekly pill organizer on a table indoors.",
-      "pexels_id": 8088898,
-      "photographer": "Yaroslav Shuraev",
-      "pexels_url": "https://www.pexels.com/photo/person-organizing-his-medicines-8088898/"
-    },
-    {
-      "page": "blog:men-s-health-checkups-what-to-know",
-      "file": "public/images/stock/blog-men-s-health-checkups-what-to-know.jpg",
-      "source": "pexels",
-      "alt": "Doctor checking patient's blood pressure during medical consultation indoors.",
-      "pexels_id": 14558560,
-      "photographer": "Imad Clicks",
-      "pexels_url": "https://www.pexels.com/photo/a-doctor-taking-a-patient-s-blood-pressure-14558560/"
-    },
-    {
-      "page": "blog:minor-injuries-home-care-or-office-visit",
-      "file": "public/images/stock/blog-minor-injuries-home-care-or-office-visit.jpg",
-      "source": "pexels",
-      "alt": "A close-up view of an adult applying a band aid to a child's wounded knee outdoors during the day.",
-      "pexels_id": 8798943,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/a-hand-touching-the-band-aid-on-person-s-toe-8798943/"
-    },
-    {
-      "page": "blog:menopause-symptoms-and-support",
-      "file": "public/images/stock/blog-menopause-symptoms-and-support.jpg",
-      "source": "pexels",
-      "alt": "Senior woman performing exercise on stability ball for fitness and strength.",
-      "pexels_id": 6539883,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/healthy-people-relaxation-women-6539883/"
-    },
-    {
-      "page": "blog:prediabetes-warning-sign-and-opportunity",
-      "file": "public/images/stock/blog-prediabetes-warning-sign-and-opportunity.jpg",
-      "source": "pexels",
-      "alt": "Yellow triangular warning sign indicating slippery surface in lush forest setting.",
-      "pexels_id": 8634398,
-      "photographer": "Ariel",
-      "pexels_url": "https://www.pexels.com/photo/yellow-and-black-road-sign-8634398/"
-    },
-    {
-      "page": "blog:mental-wellness-and-primary-care",
-      "file": "public/images/stock/blog-mental-wellness-and-primary-care.jpg",
-      "source": "pexels",
-      "alt": "Close-up of 'Mental Health' text on cloth, symbolizing calmness and self-care.",
-      "pexels_id": 7005332,
-      "photographer": "Vie Studio",
-      "pexels_url": "https://www.pexels.com/photo/the-phrase-mental-health-on-a-sheet-of-fabric-7005332/"
-    },
-    {
-      "page": "blog:questions-to-ask-your-primary-care-provider",
-      "file": "public/images/stock/blog-questions-to-ask-your-primary-care-provider.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a magnifying glass focusing on the phrase 'Frequently Asked Questions'.",
-      "pexels_id": 221164,
-      "photographer": "Pixabay",
-      "pexels_url": "https://www.pexels.com/photo/black-magnifying-glass-221164/"
-    },
-    {
-      "page": "blog:preparing-for-cold-and-flu-season",
-      "file": "public/images/stock/blog-preparing-for-cold-and-flu-season.jpg",
-      "source": "pexels",
-      "alt": "Close-up of medication and thermometer on a bed beside a plush rabbit toy, symbolizing childhood illness care.",
-      "pexels_id": 3873214,
-      "photographer": "Polina Tankilevitch",
-      "pexels_url": "https://www.pexels.com/photo/thermometer-and-pills-on-bed-3873214/"
-    },
-    {
-      "page": "blog:seasonal-allergies-relief-strategies",
-      "file": "public/images/stock/blog-seasonal-allergies-relief-strategies.jpg",
-      "source": "pexels",
-      "alt": "A young woman with closed eyes sneezing into a tissue, sitting indoors.",
-      "pexels_id": 3783806,
-      "photographer": "Andrea Piacquadio",
-      "pexels_url": "https://www.pexels.com/photo/sick-woman-wiping-her-nose-with-tissue-3783806/"
-    },
-    {
-      "page": "blog:sleep-and-your-overall-health",
-      "file": "public/images/stock/blog-sleep-and-your-overall-health.jpg",
-      "source": "pexels",
-      "alt": "Peaceful elderly couple sleeping together in bed, showing relaxation and comfort.",
-      "pexels_id": 8972607,
-      "photographer": "SHVETS production",
-      "pexels_url": "https://www.pexels.com/photo/a-couple-sleeping-on-the-bed-8972607/"
-    },
-    {
-      "page": "blog:skin-concerns-your-primary-care-provider-can-help-with",
-      "file": "public/images/stock/blog-skin-concerns-your-primary-care-provider-can-help-with.jpg",
-      "source": "pexels",
-      "alt": "A woman looks at her skin with concern, touching her chin, worried about acne.",
-      "pexels_id": 5588024,
-      "photographer": "Polina Tankilevitch",
-      "pexels_url": "https://www.pexels.com/photo/a-woman-touching-her-pimple-5588024/"
-    },
-    {
-      "page": "blog:staying-active-with-chronic-conditions",
-      "file": "public/images/stock/blog-staying-active-with-chronic-conditions.jpg",
-      "source": "pexels",
-      "alt": "Crop sportswoman in sportswear tying sneakers while sitting on wooden floor with sport mat and dumbbells before exercising indoors",
-      "pexels_id": 4498553,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/anonymous-slender-female-athlete-tying-shoelaces-near-sport-accessories-4498553/"
-    },
-    {
-      "page": "blog:staying-healthy-as-a-caregiver",
-      "file": "public/images/stock/blog-staying-healthy-as-a-caregiver.jpg",
-      "source": "pexels",
-      "alt": "A family assists in measuring blood pressure at home, promoting healthcare awareness.",
-      "pexels_id": 7446757,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/woman-in-wheelchair-measuring-blood-pressure-7446757/"
-    },
-    {
-      "page": "blog:understanding-thyroid-problems",
-      "file": "public/images/stock/blog-understanding-thyroid-problems.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a woman touching her neck, possibly indicating discomfort or throat pain.",
-      "pexels_id": 11352535,
-      "photographer": "Picas Joe",
-      "pexels_url": "https://www.pexels.com/photo/close-up-of-woman-touching-her-tonsils-11352535/"
-    },
-    {
-      "page": "blog:stress-and-physical-health",
-      "file": "public/images/stock/blog-stress-and-physical-health.jpg",
-      "source": "pexels",
-      "alt": "Close-up of hands using a spiky massage ball for therapy against a blue backdrop.",
-      "pexels_id": 11170468,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/hands-with-massage-ball-11170468/"
-    },
-    {
-      "page": "blog:understanding-high-blood-pressure",
-      "file": "public/images/stock/blog-understanding-high-blood-pressure.jpg",
-      "source": "pexels",
-      "alt": "A healthcare professional checks a patient's blood pressure in a clinic in Lagos, Nigeria.",
-      "pexels_id": 30688589,
-      "photographer": "Ninthgrid",
-      "pexels_url": "https://www.pexels.com/photo/healthcare-professional-checking-patient-s-blood-pressure-30688589/"
-    },
-    {
-      "page": "blog:understanding-your-lab-results",
-      "file": "public/images/stock/blog-understanding-your-lab-results.jpg",
-      "source": "pexels",
-      "alt": "A blood sample tube placed on a chemistry panel document, showcasing medical testing.",
-      "pexels_id": 39190202,
-      "photographer": "Steppe Walker",
-      "pexels_url": "https://www.pexels.com/photo/blood-sample-tube-on-chemistry-panel-document-39190202/"
-    },
-    {
-      "page": "blog:vaccines-for-adults-what-to-know",
-      "file": "public/images/stock/blog-vaccines-for-adults-what-to-know.jpg",
-      "source": "pexels",
-      "alt": "A close-up image of an adult with a bandage on the upper arm, likely after vaccination.",
-      "pexels_id": 8526798,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/a-person-with-a-plaster-on-the-shoulder-8526798/"
-    },
-    {
-      "page": "blog:weight-management-without-fad-diets",
-      "file": "public/images/stock/blog-weight-management-without-fad-diets.jpg",
-      "source": "pexels",
-      "alt": "A fork entwined with a blue measuring tape, symbolizing dieting and weight management.",
-      "pexels_id": 31144000,
-      "photographer": "Beyzaa",
-      "pexels_url": "https://www.pexels.com/photo/fork-with-measuring-tape-diet-concept-image-31144000/"
-    },
-    {
-      "page": "blog:urinary-tract-infections-signs-and-treatment",
-      "file": "public/images/stock/blog-urinary-tract-infections-signs-and-treatment.jpg",
-      "source": "pexels",
-      "alt": "Red warning sign for COVID-19 affected area urging people not to enter.",
-      "pexels_id": 8442566,
-      "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/covid-19-pandemic-warning-on-red-sign-on-wall-8442566/"
-    },
-    {
-      "page": "blog:vitamin-d-and-your-health",
-      "file": "public/images/stock/blog-vitamin-d-and-your-health.jpg",
-      "source": "pexels",
-      "alt": "Close-up of various pills and supplements on a marble background, symbolizing health care and wellness.",
-      "pexels_id": 7615414,
-      "photographer": "Nataliya Vaitkevich",
-      "pexels_url": "https://www.pexels.com/photo/variety-of-supplements-and-pills-on-marble-surface-7615414/"
-    },
-    {
-      "page": "blog:which-screenings-do-you-need-at-every-age",
-      "file": "public/images/stock/blog-which-screenings-do-you-need-at-every-age.jpg",
-      "source": "pexels",
-      "alt": "Close-up of a doctor examining a patient's throat with a tongue depressor in a clinical setting.",
-      "pexels_id": 7579821,
-      "photographer": "cottonbro studio",
-      "pexels_url": "https://www.pexels.com/photo/close-up-of-doctor-hands-in-gloves-and-patient-with-open-mouth-7579821/"
-    },
-    {
-      "page": "blog:why-preventive-care-saves-time-and-worry",
-      "file": "public/images/stock/blog-why-preventive-care-saves-time-and-worry.jpg",
-      "source": "pexels",
-      "alt": "Doctors and nurses working together in a hospital, focused on patient care.",
-      "pexels_id": 6129145,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/nurses-smiling-at-each-other-6129145/"
-    },
-    {
-      "page": "blog:when-to-visit-primary-care-instead-of-urgent-care",
-      "file": "public/images/stock/blog-when-to-visit-primary-care-instead-of-urgent-care.jpg",
-      "source": "pexels",
-      "alt": "Flat lay of stethoscope, blank paper, and pen on blue surface, ideal for medical themes.",
-      "pexels_id": 7722680,
-      "photographer": "Tara Winstead",
-      "pexels_url": "https://www.pexels.com/photo/black-stethoscope-near-the-blank-paper-7722680/"
-    },
-    {
-      "page": "blog:what-to-expect-at-your-annual-physical",
-      "file": "public/images/stock/blog-what-to-expect-at-your-annual-physical.jpg",
-      "source": "pexels",
-      "alt": "A female doctor uses a stethoscope to listen to a young boy's heartbeat, conducting a health check outdoors.",
-      "pexels_id": 39296745,
-      "photographer": "Tahir Xəlfəquliyev",
-      "pexels_url": "https://www.pexels.com/photo/female-doctor-examining-boy-s-heartbeat-outdoors-39296745/"
-    },
-    {
-      "page": "blog:women-s-health-checkups-through-every-life-stage",
-      "file": "public/images/stock/blog-women-s-health-checkups-through-every-life-stage.jpg",
-      "source": "pexels",
-      "alt": "A specialist performing a skin analysis on a patient using advanced equipment in a clinic.",
-      "pexels_id": 7446669,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/woman-having-a-facial-done-by-a-beautician-7446669/"
-    }
-  ]
+ "note": "Page photos chosen by the website builder. Pexels photos are free to use (pexels.com/license); credit is appreciated, not required.",
+ "images": [
+  {
+   "page": "compare:physician-vs-nurse-practitioner",
+   "file": "public/images/stock/compare-physician-vs-nurse-practitioner.jpg",
+   "source": "scraped",
+   "alt": "Physician vs Nurse Practitioner: Who Should You See?",
+   "scraped_from": "https://cdn.prod.website-files.com/68a4bd68f1543da31a3e216f/68b5fc22195b2b7b7526b4f9_Nurse%20Practitioner%20Care.jpg"
+  },
+  {
+   "page": "services:age-related-screening",
+   "file": "public/images/stock/age-related-screening.jpg",
+   "source": "pexels",
+   "alt": "Healthcare professional checks senior's blood pressure at clinic for health assessment.",
+   "pexels_id": 39192356,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-measuring-blood-pressure-of-senior-patient-39192356/"
+  },
+  {
+   "page": "services:general-illness-injuries",
+   "file": "public/images/stock/general-illness-injuries.jpg",
+   "source": "pexels",
+   "alt": "Woman resting on a couch with head bandaged, surrounded by medicine. Indoor recovery scene.",
+   "pexels_id": 5207239,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/woman-with-head-bandage-lying-on-a-couch-5207239/"
+  },
+  {
+   "page": "services:chronic-disease-management",
+   "file": "public/images/stock/chronic-disease-management.jpg",
+   "source": "pexels",
+   "alt": "Hands measuring blood glucose levels with a glucose meter and test strip.",
+   "pexels_id": 7653134,
+   "photographer": "Pavel Danilyuk",
+   "pexels_url": "https://www.pexels.com/photo/close-up-of-hands-holding-glucose-meter-7653134/"
+  },
+  {
+   "page": "services:women-s-health",
+   "file": "public/images/stock/women-s-health.jpg",
+   "source": "pexels",
+   "alt": "Medical consultation with a doctor using a stethoscope for patient examination indoors.",
+   "pexels_id": 5214992,
+   "photographer": "Antoni Shkraba",
+   "pexels_url": "https://www.pexels.com/photo/doctor-checking-the-heart-of-a-woman-5214992/"
+  },
+  {
+   "page": "services:preventive-health",
+   "file": "public/images/stock/preventive-health.jpg",
+   "source": "pexels",
+   "alt": "A doctor performs a blood pressure check in a Lagos clinic, emphasizing healthcare.",
+   "pexels_id": 30678208,
+   "photographer": "Ninthgrid",
+   "pexels_url": "https://www.pexels.com/photo/medical-checkup-in-a-lagos-clinic-30678208/"
+  },
+  {
+   "page": "conditions:acid-reflux",
+   "file": "public/images/stock/acid-reflux.jpg",
+   "source": "pexels",
+   "alt": "Doctor with stethoscope examining a smiling patient indoors, promoting health and care.",
+   "pexels_id": 5215012,
+   "photographer": "Antoni Shkraba",
+   "pexels_url": "https://www.pexels.com/photo/doctor-checking-the-heart-beat-of-a-man-5215012/"
+  },
+  {
+   "page": "conditions:anemia",
+   "file": "public/images/stock/anemia.jpg",
+   "source": "pexels",
+   "alt": "Doctor checks blood pressure of a patient wearing a headscarf indoors, focused on healthcare.",
+   "pexels_id": 7659572,
+   "photographer": "Thirdman",
+   "pexels_url": "https://www.pexels.com/photo/a-doctor-taking-blood-pressure-of-a-patient-7659572/"
+  },
+  {
+   "page": "conditions:asthma",
+   "file": "public/images/stock/asthma.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a woman using an inhaler for respiratory health management.",
+   "pexels_id": 30425693,
+   "photographer": "Cnordic Nordic",
+   "pexels_url": "https://www.pexels.com/photo/woman-using-inhaler-for-respiratory-relief-30425693/"
+  },
+  {
+   "page": "conditions:arthritis",
+   "file": "public/images/stock/arthritis.jpg",
+   "source": "pexels",
+   "alt": "Detailed view of elderly hands with a gold ring, symbolizing wisdom and experience.",
+   "pexels_id": 36730753,
+   "photographer": "Chaitali Chowdhury",
+   "pexels_url": "https://www.pexels.com/photo/close-up-of-senior-hands-with-wrinkled-skin-and-ring-36730753/",
+   "replaced_by": "optimize pass 2026-11-06 (was 8395812)"
+  },
+  {
+   "page": "conditions:back-pain",
+   "file": "public/images/stock/back-pain.jpg",
+   "source": "pexels",
+   "alt": "A man in a checkered shirt working at a desk with books and a typewriter.",
+   "pexels_id": 374047,
+   "photographer": "Burst",
+   "pexels_url": "https://www.pexels.com/photo/man-sitting-on-chair-facing-table-374047/",
+   "replaced_by": "optimize pass 2026-11-06 (was 7298613)"
+  },
+  {
+   "page": "conditions:chronic-fatigue",
+   "file": "public/images/stock/chronic-fatigue.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a woman with a headache, hand on forehead, in a comfortable setting.",
+   "pexels_id": 5979728,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/woman-suffering-from-headache-5979728/"
+  },
+  {
+   "page": "conditions:copd",
+   "file": "public/images/stock/copd.jpg",
+   "source": "pexels",
+   "alt": "Middle-aged man using an inhaler to manage respiratory issues indoors.",
+   "pexels_id": 30428329,
+   "photographer": "Cnordic Nordic",
+   "pexels_url": "https://www.pexels.com/photo/man-using-inhaler-for-respiratory-health-30428329/"
+  },
+  {
+   "page": "conditions:hypertension",
+   "file": "public/images/stock/hypertension.jpg",
+   "source": "pexels",
+   "alt": "Doctor checking blood pressure of patient at medical clinic.",
+   "pexels_id": 39192345,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-measuring-patient-s-blood-pressure-in-office-39192345/"
+  },
+  {
+   "page": "conditions:bronchitis",
+   "file": "public/images/stock/bronchitis.jpg",
+   "source": "pexels",
+   "alt": "A close-up image of a man using an inhaler, highlighting respiratory health concepts.",
+   "pexels_id": 30425668,
+   "photographer": "Cnordic Nordic",
+   "pexels_url": "https://www.pexels.com/photo/close-up-of-man-using-inhaler-for-asthma-relief-30425668/"
+  },
+  {
+   "page": "conditions:high-cholesterol",
+   "file": "public/images/stock/high-cholesterol.jpg",
+   "source": "pexels",
+   "alt": "A close-up shot of medical equipment including blood pressure monitor and pills on an ECG graph.",
+   "pexels_id": 32417921,
+   "photographer": "Marta Branco",
+   "pexels_url": "https://www.pexels.com/photo/blood-pressure-monitor-and-medical-equipment-close-up-32417921/"
+  },
+  {
+   "page": "conditions:irregular-menstrual-cycles",
+   "file": "public/images/stock/irregular-menstrual-cycles.jpg",
+   "source": "pexels",
+   "alt": "From above of crop anonymous African American female lying on couch and touching belly while having stomach ache",
+   "pexels_id": 5938362,
+   "photographer": "Sora Shimazaki",
+   "pexels_url": "https://www.pexels.com/photo/woman-suffering-from-a-stomach-pain-5938362/",
+   "replaced_by": "optimize pass 2026-11-06 (was 7692046)"
+  },
+  {
+   "page": "conditions:menopause-symptoms",
+   "file": "public/images/stock/menopause-symptoms.jpg",
+   "source": "pexels",
+   "alt": "Two women enjoying a day outdoors, toasting with coffee in a sunny setting.",
+   "pexels_id": 6539976,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/healthy-fashion-beach-sunglasses-6539976/"
+  },
+  {
+   "page": "conditions:influenza",
+   "file": "public/images/stock/influenza.jpg",
+   "source": "pexels",
+   "alt": "Thermometer with crumpled tissues on denim fabric, evoking themes of sickness and care.",
+   "pexels_id": 3873200,
+   "photographer": "Polina Tankilevitch",
+   "pexels_url": "https://www.pexels.com/photo/thermometer-on-blanket-3873200/"
+  },
+  {
+   "page": "conditions:minor-cuts-and-sprains",
+   "file": "public/images/stock/minor-cuts-and-sprains.jpg",
+   "source": "pexels",
+   "alt": "Close-up of hands, one grasping the other, symbolizing pain or discomfort.",
+   "pexels_id": 12460181,
+   "photographer": "Towfiqu barbhuiya",
+   "pexels_url": "https://www.pexels.com/photo/a-person-holding-own-hand-12460181/"
+  },
+  {
+   "page": "conditions:obesity-and-weight-management",
+   "file": "public/images/stock/obesity-and-weight-management.jpg",
+   "source": "pexels",
+   "alt": "Female nutritionist in office holding broccoli, surrounded by fruits, promoting healthy lifestyle.",
+   "pexels_id": 15319047,
+   "photographer": "beyzahzah",
+   "pexels_url": "https://www.pexels.com/photo/nutritionist-holding-broccoli-in-office-15319047/",
+   "replaced_by": "optimize pass 2026-11-06 (was 6669474)"
+  },
+  {
+   "page": "conditions:osteoarthritis",
+   "file": "public/images/stock/osteoarthritis.jpg",
+   "source": "pexels",
+   "alt": "Experienced doctor consulting a patient in a medical office setting.",
+   "pexels_id": 39192333,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/senior-doctor-consulting-patient-in-office-39192333/"
+  },
+  {
+   "page": "conditions:prediabetes",
+   "file": "public/images/stock/prediabetes.jpg",
+   "source": "pexels",
+   "alt": "Doctor in white coat consulting patient in a modern office setting.",
+   "pexels_id": 39192395,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-consulting-patient-in-modern-office-39192395/"
+  },
+  {
+   "page": "conditions:seasonal-allergies",
+   "file": "public/images/stock/seasonal-allergies.jpg",
+   "source": "pexels",
+   "alt": "A woman sneezes outdoors while holding a tissue and a mask, reflecting health concerns.",
+   "pexels_id": 3985185,
+   "photographer": "Gustavo Fring",
+   "pexels_url": "https://www.pexels.com/photo/woman-wiping-her-nose-with-tissue-3985185/",
+   "replaced_by": "optimize pass 2026-11-06 (was 4000624)"
+  },
+  {
+   "page": "conditions:osteoporosis-risk",
+   "file": "public/images/stock/osteoporosis-risk.jpg",
+   "source": "pexels",
+   "alt": "Elderly woman practicing Nordic walking on a park trail, promoting health and fitness.",
+   "pexels_id": 8795589,
+   "photographer": "Anastasia  Shuraeva",
+   "pexels_url": "https://www.pexels.com/photo/elderly-woman-walking-on-a-park-8795589/",
+   "replaced_by": "optimize pass 2026-11-06 (was 32849865)"
+  },
+  {
+   "page": "conditions:sinus-infections",
+   "file": "public/images/stock/sinus-infections.jpg",
+   "source": "pexels",
+   "alt": "Woman holding her nose with a band-aid, showing discomfort and pain indoors.",
+   "pexels_id": 5207305,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/a-woman-crying-in-pain-5207305/",
+   "replaced_by": "optimize pass 2026-11-06 (was 30336149)"
+  },
+  {
+   "page": "conditions:thyroid-disorders",
+   "file": "public/images/stock/thyroid-disorders.jpg",
+   "source": "pexels",
+   "alt": "A doctor in a white coat consults a smiling patient against a pink backdrop.",
+   "pexels_id": 7659873,
+   "photographer": "Thirdman",
+   "pexels_url": "https://www.pexels.com/photo/doctor-consulting-a-patient-7659873/"
+  },
+  {
+   "page": "conditions:skin-rashes",
+   "file": "public/images/stock/skin-rashes.jpg",
+   "source": "pexels",
+   "alt": "A dermatologist conducts a skin treatment on a patient in a modern clinic setting.",
+   "pexels_id": 32260065,
+   "photographer": "Dr. Haror's  Wellness",
+   "pexels_url": "https://www.pexels.com/photo/dermatologist-performing-skin-treatment-in-clinic-32260065/",
+   "replaced_by": "optimize pass 2026-11-06 (was 9507051)"
+  },
+  {
+   "page": "conditions:type-2-diabetes",
+   "file": "public/images/stock/type-2-diabetes.jpg",
+   "source": "pexels",
+   "alt": "Flat lay of a diabetes monitoring kit with syringes and glucose meter on a blue background.",
+   "pexels_id": 6941878,
+   "photographer": "Nataliya Vaitkevich",
+   "pexels_url": "https://www.pexels.com/photo/symbols-for-world-diabetes-day-awareness-6941878/"
+  },
+  {
+   "page": "conditions:vitamin-d-deficiency",
+   "file": "public/images/stock/vitamin-d-deficiency.jpg",
+   "source": "pexels",
+   "alt": "A close-up image of vitamin tablets spilling out of a transparent brown bottle on a wooden surface.",
+   "pexels_id": 11348080,
+   "photographer": "Picas Joe",
+   "pexels_url": "https://www.pexels.com/photo/medicine-tablet-on-a-wooden-surface-in-close-up-photography-11348080/"
+  },
+  {
+   "page": "conditions:urinary-tract-infections",
+   "file": "public/images/stock/urinary-tract-infections.jpg",
+   "source": "pexels",
+   "alt": "Close-up of healthcare worker applying hand sanitizer with a spray bottle for hygiene.",
+   "pexels_id": 5234494,
+   "photographer": "Polina Tankilevitch",
+   "pexels_url": "https://www.pexels.com/photo/person-holding-a-spray-bottle-with-liquid-5234494/"
+  },
+  {
+   "page": "compare:annual-physical-vs-problem-focused-visit",
+   "file": "public/images/stock/compare-annual-physical-vs-problem-focused-visit.jpg",
+   "source": "pexels",
+   "alt": "Senior man consulting with female doctor in a colorful office setting.",
+   "pexels_id": 39192354,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-and-patient-consultation-in-modern-office-39192354/"
+  },
+  {
+   "page": "compare:preventive-screening-vs-diagnostic-testing",
+   "file": "public/images/stock/compare-preventive-screening-vs-diagnostic-testing.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a healthcare worker performing a blood test using sterile gloves.",
+   "pexels_id": 6285353,
+   "photographer": "Gustavo Fring",
+   "pexels_url": "https://www.pexels.com/photo/a-person-taking-a-blood-glucose-test-6285353/"
+  },
+  {
+   "page": "locations:hagerstown-md",
+   "file": "public/images/stock/hero-locations.jpg",
+   "source": "pexels",
+   "alt": "Aerial view of picturesque rolling hills and vibrant autumn foliage in the countryside.",
+   "pexels_id": 40395088,
+   "photographer": "Mark Stebnicki",
+   "pexels_url": "https://www.pexels.com/photo/scenic-autumn-landscape-of-rolling-hills-and-forest-40395088/",
+   "replaced_by": "optimize pass 2026-11-06 (was 40214513 Annapolis)"
+  },
+  {
+   "page": "blog:anemia-and-fatigue-what-is-the-connection",
+   "file": "public/images/stock/blog-anemia-and-fatigue-what-is-the-connection.jpg",
+   "source": "pexels",
+   "alt": "A woman lying on a sofa showing visible stress and emotion, clutching a pillow.",
+   "pexels_id": 5616229,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/sad-woman-in-black-shirt-lying-on-pillow-on-a-sofa-5616229/"
+  },
+  {
+   "page": "blog:back-pain-when-to-seek-care",
+   "file": "public/images/stock/blog-back-pain-when-to-seek-care.jpg",
+   "source": "pexels",
+   "alt": "From above of crop faceless slim female patient sitting on examination couch and indicating osteopath in uniform pain spot on back in clinic",
+   "pexels_id": 4506109,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/doctor-examines-woman-s-back-4506109/"
+  },
+  {
+   "page": "compare:lifestyle-changes-vs-medication-prediabetes",
+   "file": "public/images/stock/compare-lifestyle-changes-vs-medication-prediabetes.jpg",
+   "source": "pexels",
+   "alt": "Close-up of diabetes management tools including glucometer and pills on a pink background.",
+   "pexels_id": 8965152,
+   "photographer": "Nataliya Vaitkevich",
+   "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-glucometer-beside-capsules-8965152/"
+  },
+  {
+   "page": "compare:primary-care-vs-urgent-care",
+   "file": "public/images/stock/compare-primary-care-vs-urgent-care.jpg",
+   "source": "pexels",
+   "alt": "A neon-lit medical clinic entrance with no people visible, captured during the night.",
+   "pexels_id": 9538601,
+   "photographer": "Erik Mclean",
+   "pexels_url": "https://www.pexels.com/photo/red-and-white-unks-store-signage-9538601/",
+   "replaced_by": "optimize pass 2026-11-06 (was 263402)"
+  },
+  {
+   "page": "blog:bone-health-and-osteoporosis-prevention",
+   "file": "public/images/stock/blog-bone-health-and-osteoporosis-prevention.jpg",
+   "source": "pexels",
+   "alt": "Doctor examining a skull X-ray image on a digital tablet indoors.",
+   "pexels_id": 39192338,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-analyzing-x-ray-on-digital-tablet-39192338/"
+  },
+  {
+   "page": "blog:cholesterol-basics-numbers-that-matter",
+   "file": "public/images/stock/blog-cholesterol-basics-numbers-that-matter.jpg",
+   "source": "pexels",
+   "alt": "Top view of fresh avocados and almonds on a wooden board for a healthy snack.",
+   "pexels_id": 13072968,
+   "photographer": "Towfiqu barbhuiya",
+   "pexels_url": "https://www.pexels.com/photo/almond-nuts-and-avocados-on-brown-wooden-chopping-board-13072968/",
+   "replaced_by": "optimize pass 2026-11-06 (was 1329293)"
+  },
+  {
+   "page": "blog:building-a-long-term-relationship-with-your-provider",
+   "file": "public/images/stock/blog-building-a-long-term-relationship-with-your-provider.jpg",
+   "source": "pexels",
+   "alt": "A doctor uses a stethoscope to examine a young boy with his mother present in a medical office.",
+   "pexels_id": 39192343,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-conducting-medical-examination-on-young-boy-39192343/"
+  },
+  {
+   "page": "blog:cold-flu-or-allergies-how-to-tell",
+   "file": "public/images/stock/blog-cold-flu-or-allergies-how-to-tell.jpg",
+   "source": "pexels",
+   "alt": "Small sick redhead kid with eyes closed cleaning nose with white tissue paper while lying alone in bed in light modern bedroom in daytime",
+   "pexels_id": 3765115,
+   "photographer": "Andrea Piacquadio",
+   "pexels_url": "https://www.pexels.com/photo/a-sick-girl-wiping-her-nose-with-tissue-3765115/"
+  },
+  {
+   "page": "blog:healthy-aging-staying-active-and-independent",
+   "file": "public/images/stock/blog-healthy-aging-staying-active-and-independent.jpg",
+   "source": "pexels",
+   "alt": "Elderly man in blue shirt lifting dumbbells near laptop, embracing home fitness.",
+   "pexels_id": 8899509,
+   "photographer": "SHVETS production",
+   "pexels_url": "https://www.pexels.com/photo/an-elderly-man-in-blue-shirt-holding-a-dumbbells-8899509/"
+  },
+  {
+   "page": "blog:healthy-eating-for-chronic-condition-management",
+   "file": "public/images/stock/blog-healthy-eating-for-chronic-condition-management.jpg",
+   "source": "pexels",
+   "alt": "A senior man supported by a volunteer with groceries at home.",
+   "pexels_id": 7551581,
+   "photographer": "Kampus Production",
+   "pexels_url": "https://www.pexels.com/photo/an-elderly-man-holding-leafy-vegetables-7551581/"
+  },
+  {
+   "page": "blog:healthy-habits-for-the-whole-family",
+   "file": "public/images/stock/blog-healthy-habits-for-the-whole-family.jpg",
+   "source": "pexels",
+   "alt": "A young girl with curly hair brushes her teeth at a sink, promoting dental hygiene.",
+   "pexels_id": 8762987,
+   "photographer": "Pavel Danilyuk",
+   "pexels_url": "https://www.pexels.com/photo/girl-brushing-her-teeth-8762987/"
+  },
+  {
+   "page": "blog:heartburn-and-acid-reflux-explained",
+   "file": "public/images/stock/blog-heartburn-and-acid-reflux-explained.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a red stethoscope symbolizing medical care and healthcare diagnostics.",
+   "pexels_id": 5149754,
+   "photographer": "Roger Brown",
+   "pexels_url": "https://www.pexels.com/photo/stethoscope-on-white-surface-5149754/"
+  },
+  {
+   "page": "blog:how-to-prepare-for-a-primary-care-visit",
+   "file": "public/images/stock/blog-how-to-prepare-for-a-primary-care-visit.jpg",
+   "source": "pexels",
+   "alt": "A hand writing in a notebook near a laptop, representing planning and freelancing.",
+   "pexels_id": 9052143,
+   "photographer": "SHVETS production",
+   "pexels_url": "https://www.pexels.com/photo/a-person-writing-on-a-notebook-9052143/",
+   "replaced_by": "optimize pass 2026-11-06 (was 7446997)"
+  },
+  {
+   "page": "blog:managing-asthma-through-the-seasons",
+   "file": "public/images/stock/blog-managing-asthma-through-the-seasons.jpg",
+   "source": "pexels",
+   "alt": "Close-up of an adult using an inhaler for asthma management.",
+   "pexels_id": 29702937,
+   "photographer": "Cnordic Nordic",
+   "pexels_url": "https://www.pexels.com/photo/adult-using-inhaler-for-asthma-relief-29702937/"
+  },
+  {
+   "page": "blog:managing-arthritis-pain",
+   "file": "public/images/stock/blog-managing-arthritis-pain.jpg",
+   "source": "pexels",
+   "alt": "Person sitting on sofa, holding knee in pain. Indoor lifestyle health concept.",
+   "pexels_id": 11349880,
+   "photographer": "Towfiqu barbhuiya",
+   "pexels_url": "https://www.pexels.com/photo/person-feeling-pain-in-the-knee-11349880/"
+  },
+  {
+   "page": "blog:managing-type-2-diabetes-day-to-day",
+   "file": "public/images/stock/blog-managing-type-2-diabetes-day-to-day.jpg",
+   "source": "pexels",
+   "alt": "Top view of diabetes management tools including glucose meter and insulin syringes on purple background.",
+   "pexels_id": 6941102,
+   "photographer": "Nataliya Vaitkevich",
+   "pexels_url": "https://www.pexels.com/photo/diabetic-kit-and-insulin-over-a-purple-surface-6941102/"
+  },
+  {
+   "page": "blog:medication-management-tips",
+   "file": "public/images/stock/blog-medication-management-tips.jpg",
+   "source": "pexels",
+   "alt": "Senior adult organizing daily medications using a weekly pill organizer on a table indoors.",
+   "pexels_id": 8088898,
+   "photographer": "Yaroslav Shuraev",
+   "pexels_url": "https://www.pexels.com/photo/person-organizing-his-medicines-8088898/"
+  },
+  {
+   "page": "blog:men-s-health-checkups-what-to-know",
+   "file": "public/images/stock/blog-men-s-health-checkups-what-to-know.jpg",
+   "source": "pexels",
+   "alt": "Doctor checking patient's blood pressure during medical consultation indoors.",
+   "pexels_id": 14558560,
+   "photographer": "Imad Clicks",
+   "pexels_url": "https://www.pexels.com/photo/a-doctor-taking-a-patient-s-blood-pressure-14558560/"
+  },
+  {
+   "page": "blog:minor-injuries-home-care-or-office-visit",
+   "file": "public/images/stock/blog-minor-injuries-home-care-or-office-visit.jpg",
+   "source": "pexels",
+   "alt": "A close-up view of an adult applying a band aid to a child's wounded knee outdoors during the day.",
+   "pexels_id": 8798943,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/a-hand-touching-the-band-aid-on-person-s-toe-8798943/"
+  },
+  {
+   "page": "blog:menopause-symptoms-and-support",
+   "file": "public/images/stock/blog-menopause-symptoms-and-support.jpg",
+   "source": "pexels",
+   "alt": "Senior woman performing exercise on stability ball for fitness and strength.",
+   "pexels_id": 6539883,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/healthy-people-relaxation-women-6539883/"
+  },
+  {
+   "page": "blog:prediabetes-warning-sign-and-opportunity",
+   "file": "public/images/stock/blog-prediabetes-warning-sign-and-opportunity.jpg",
+   "source": "pexels",
+   "alt": "Close-up image of hands checking blood glucose level using a glucometer, featuring testing supplies on a white background.",
+   "pexels_id": 6823516,
+   "photographer": "Artem Podrez",
+   "pexels_url": "https://www.pexels.com/photo/a-person-holding-a-white-glucometer-6823516/",
+   "replaced_by": "optimize pass 2026-11-06 (was 8634398)"
+  },
+  {
+   "page": "blog:mental-wellness-and-primary-care",
+   "file": "public/images/stock/blog-mental-wellness-and-primary-care.jpg",
+   "source": "pexels",
+   "alt": "Therapist and patient in conversation during a counseling session indoors.",
+   "pexels_id": 36729378,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/therapist-consulting-with-patient-in-office-setting-36729378/",
+   "replaced_by": "optimize pass 2026-11-06 (was 7005332)"
+  },
+  {
+   "page": "blog:questions-to-ask-your-primary-care-provider",
+   "file": "public/images/stock/blog-questions-to-ask-your-primary-care-provider.jpg",
+   "source": "pexels",
+   "alt": "A doctor and patient engaging in a positive consultation in a bright clinic setting.",
+   "pexels_id": 7579831,
+   "photographer": "cottonbro studio",
+   "pexels_url": "https://www.pexels.com/photo/a-doctor-talking-the-patient-7579831/",
+   "replaced_by": "optimize pass 2026-11-06 (was 221164)"
+  },
+  {
+   "page": "blog:preparing-for-cold-and-flu-season",
+   "file": "public/images/stock/blog-preparing-for-cold-and-flu-season.jpg",
+   "source": "pexels",
+   "alt": "Close-up of medication and thermometer on a bed beside a plush rabbit toy, symbolizing childhood illness care.",
+   "pexels_id": 3873214,
+   "photographer": "Polina Tankilevitch",
+   "pexels_url": "https://www.pexels.com/photo/thermometer-and-pills-on-bed-3873214/"
+  },
+  {
+   "page": "blog:seasonal-allergies-relief-strategies",
+   "file": "public/images/stock/blog-seasonal-allergies-relief-strategies.jpg",
+   "source": "pexels",
+   "alt": "A young woman with closed eyes sneezing into a tissue, sitting indoors.",
+   "pexels_id": 3783806,
+   "photographer": "Andrea Piacquadio",
+   "pexels_url": "https://www.pexels.com/photo/sick-woman-wiping-her-nose-with-tissue-3783806/"
+  },
+  {
+   "page": "blog:sleep-and-your-overall-health",
+   "file": "public/images/stock/blog-sleep-and-your-overall-health.jpg",
+   "source": "pexels",
+   "alt": "Peaceful elderly couple sleeping together in bed, showing relaxation and comfort.",
+   "pexels_id": 8972607,
+   "photographer": "SHVETS production",
+   "pexels_url": "https://www.pexels.com/photo/a-couple-sleeping-on-the-bed-8972607/"
+  },
+  {
+   "page": "blog:skin-concerns-your-primary-care-provider-can-help-with",
+   "file": "public/images/stock/blog-skin-concerns-your-primary-care-provider-can-help-with.jpg",
+   "source": "pexels",
+   "alt": "A woman looks at her skin with concern, touching her chin, worried about acne.",
+   "pexels_id": 5588024,
+   "photographer": "Polina Tankilevitch",
+   "pexels_url": "https://www.pexels.com/photo/a-woman-touching-her-pimple-5588024/"
+  },
+  {
+   "page": "blog:staying-active-with-chronic-conditions",
+   "file": "public/images/stock/blog-staying-active-with-chronic-conditions.jpg",
+   "source": "pexels",
+   "alt": "Crop sportswoman in sportswear tying sneakers while sitting on wooden floor with sport mat and dumbbells before exercising indoors",
+   "pexels_id": 4498553,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/anonymous-slender-female-athlete-tying-shoelaces-near-sport-accessories-4498553/"
+  },
+  {
+   "page": "blog:staying-healthy-as-a-caregiver",
+   "file": "public/images/stock/blog-staying-healthy-as-a-caregiver.jpg",
+   "source": "pexels",
+   "alt": "A senior woman and her adult daughter enjoy quality time relaxing at home.",
+   "pexels_id": 7231629,
+   "photographer": "cottonbro studio",
+   "pexels_url": "https://www.pexels.com/photo/women-in-the-home-living-room-7231629/",
+   "replaced_by": "optimize pass 2026-11-06 (was 7446757)"
+  },
+  {
+   "page": "blog:understanding-thyroid-problems",
+   "file": "public/images/stock/blog-understanding-thyroid-problems.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a woman touching her neck, possibly indicating discomfort or throat pain.",
+   "pexels_id": 11352535,
+   "photographer": "Picas Joe",
+   "pexels_url": "https://www.pexels.com/photo/close-up-of-woman-touching-her-tonsils-11352535/"
+  },
+  {
+   "page": "blog:stress-and-physical-health",
+   "file": "public/images/stock/blog-stress-and-physical-health.jpg",
+   "source": "pexels",
+   "alt": "Close-up of hands using a spiky massage ball for therapy against a blue backdrop.",
+   "pexels_id": 11170468,
+   "photographer": "Towfiqu barbhuiya",
+   "pexels_url": "https://www.pexels.com/photo/hands-with-massage-ball-11170468/"
+  },
+  {
+   "page": "blog:understanding-high-blood-pressure",
+   "file": "public/images/stock/blog-understanding-high-blood-pressure.jpg",
+   "source": "pexels",
+   "alt": "A healthcare professional checks a patient's blood pressure in a clinic in Lagos, Nigeria.",
+   "pexels_id": 30688589,
+   "photographer": "Ninthgrid",
+   "pexels_url": "https://www.pexels.com/photo/healthcare-professional-checking-patient-s-blood-pressure-30688589/"
+  },
+  {
+   "page": "blog:understanding-your-lab-results",
+   "file": "public/images/stock/blog-understanding-your-lab-results.jpg",
+   "source": "pexels",
+   "alt": "A blood sample tube placed on a chemistry panel document, showcasing medical testing.",
+   "pexels_id": 39190202,
+   "photographer": "Steppe Walker",
+   "pexels_url": "https://www.pexels.com/photo/blood-sample-tube-on-chemistry-panel-document-39190202/"
+  },
+  {
+   "page": "blog:vaccines-for-adults-what-to-know",
+   "file": "public/images/stock/blog-vaccines-for-adults-what-to-know.jpg",
+   "source": "pexels",
+   "alt": "A close-up image of an adult with a bandage on the upper arm, likely after vaccination.",
+   "pexels_id": 8526798,
+   "photographer": "Towfiqu barbhuiya",
+   "pexels_url": "https://www.pexels.com/photo/a-person-with-a-plaster-on-the-shoulder-8526798/"
+  },
+  {
+   "page": "blog:weight-management-without-fad-diets",
+   "file": "public/images/stock/blog-weight-management-without-fad-diets.jpg",
+   "source": "pexels",
+   "alt": "Assorted fresh vegetables and grains for a vibrant, healthy salad.",
+   "pexels_id": 3851075,
+   "photographer": "ready made",
+   "pexels_url": "https://www.pexels.com/photo/vegetables-on-the-table-3851075/",
+   "replaced_by": "optimize pass 2026-11-06 (was 31144000)"
+  },
+  {
+   "page": "blog:urinary-tract-infections-signs-and-treatment",
+   "file": "public/images/stock/blog-urinary-tract-infections-signs-and-treatment.jpg",
+   "source": "pexels",
+   "alt": "A middle-aged woman filling a glass with water in a modern kitchen setting.",
+   "pexels_id": 33768875,
+   "photographer": "Centre for Ageing Better",
+   "pexels_url": "https://www.pexels.com/photo/woman-filling-glass-with-water-in-home-kitchen-33768875/",
+   "replaced_by": "optimize pass 2026-11-06 (was 8442566)"
+  },
+  {
+   "page": "blog:vitamin-d-and-your-health",
+   "file": "public/images/stock/blog-vitamin-d-and-your-health.jpg",
+   "source": "pexels",
+   "alt": "Close-up of various pills and supplements on a marble background, symbolizing health care and wellness.",
+   "pexels_id": 7615414,
+   "photographer": "Nataliya Vaitkevich",
+   "pexels_url": "https://www.pexels.com/photo/variety-of-supplements-and-pills-on-marble-surface-7615414/"
+  },
+  {
+   "page": "blog:which-screenings-do-you-need-at-every-age",
+   "file": "public/images/stock/blog-which-screenings-do-you-need-at-every-age.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a doctor examining a patient's throat with a tongue depressor in a clinical setting.",
+   "pexels_id": 7579821,
+   "photographer": "cottonbro studio",
+   "pexels_url": "https://www.pexels.com/photo/close-up-of-doctor-hands-in-gloves-and-patient-with-open-mouth-7579821/"
+  },
+  {
+   "page": "blog:why-preventive-care-saves-time-and-worry",
+   "file": "public/images/stock/blog-why-preventive-care-saves-time-and-worry.jpg",
+   "source": "pexels",
+   "alt": "Doctors and nurses working together in a hospital, focused on patient care.",
+   "pexels_id": 6129145,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/nurses-smiling-at-each-other-6129145/"
+  },
+  {
+   "page": "blog:when-to-visit-primary-care-instead-of-urgent-care",
+   "file": "public/images/stock/blog-when-to-visit-primary-care-instead-of-urgent-care.jpg",
+   "source": "pexels",
+   "alt": "Flat lay of stethoscope, blank paper, and pen on blue surface, ideal for medical themes.",
+   "pexels_id": 7722680,
+   "photographer": "Tara Winstead",
+   "pexels_url": "https://www.pexels.com/photo/black-stethoscope-near-the-blank-paper-7722680/"
+  },
+  {
+   "page": "blog:what-to-expect-at-your-annual-physical",
+   "file": "public/images/stock/blog-what-to-expect-at-your-annual-physical.jpg",
+   "source": "pexels",
+   "alt": "A female doctor uses a stethoscope to listen to a young boy's heartbeat, conducting a health check outdoors.",
+   "pexels_id": 39296745,
+   "photographer": "Tahir Xəlfəquliyev",
+   "pexels_url": "https://www.pexels.com/photo/female-doctor-examining-boy-s-heartbeat-outdoors-39296745/"
+  },
+  {
+   "page": "blog:women-s-health-checkups-through-every-life-stage",
+   "file": "public/images/stock/blog-women-s-health-checkups-through-every-life-stage.jpg",
+   "source": "pexels",
+   "alt": "A specialist performing a skin analysis on a patient using advanced equipment in a clinic.",
+   "pexels_id": 7446669,
+   "photographer": "Gustavo Fring",
+   "pexels_url": "https://www.pexels.com/photo/woman-having-a-facial-done-by-a-beautician-7446669/"
+  },
+  {
+   "page": "hub:services",
+   "file": "public/images/stock/hub-services.jpg",
+   "source": "pexels",
+   "alt": "Doctor with stethoscope and white coat seated at a clinic desk.",
+   "pexels_id": 7578800,
+   "photographer": "cottonbro studio",
+   "pexels_url": "https://www.pexels.com/photo/a-woman-in-white-coat-sitting-at-the-table-7578800/"
+  },
+  {
+   "page": "hub:conditions",
+   "file": "public/images/stock/hub-conditions.jpg",
+   "source": "pexels",
+   "alt": "Close-up of a medical professional measuring a patient's blood pressure at a clinic.",
+   "pexels_id": 7659564,
+   "photographer": "Thirdman",
+   "pexels_url": "https://www.pexels.com/photo/a-healthcare-worker-measuring-a-patient-s-blood-pressure-using-a-sphygmomanometer-7659564/"
+  },
+  {
+   "page": "hub:faq",
+   "file": "public/images/stock/hub-faq.jpg",
+   "source": "pexels",
+   "alt": "Close-up of doctor and patient reviewing medical documents during consultation.",
+   "pexels_id": 39192334,
+   "photographer": "Vitaly Gariev",
+   "pexels_url": "https://www.pexels.com/photo/doctor-discussing-medical-report-with-patient-39192334/"
+  },
+  {
+   "page": "hub:reviews",
+   "file": "public/images/stock/hub-reviews.jpg",
+   "source": "pexels",
+   "alt": "Bright, welcoming clinic reception with patients interacting with staff for registration.",
+   "pexels_id": 7108318,
+   "photographer": "Pavel Danilyuk",
+   "pexels_url": "https://www.pexels.com/photo/couple-during-registration-in-clinic-7108318/"
+  },
+  {
+   "page": "hub:contact",
+   "file": "public/images/stock/hub-contact.jpg",
+   "source": "pexels",
+   "alt": "Medical staff members in scrub suits at a modern clinic's reception area.",
+   "pexels_id": 4269274,
+   "photographer": "Cedric Fauntleroy",
+   "pexels_url": "https://www.pexels.com/photo/a-receptionist-and-a-practitioner-at-the-reception-4269274/"
+  },
+  {
+   "page": "hub:new-patients",
+   "file": "public/images/stock/hub-new-patients.jpg",
+   "source": "pexels",
+   "alt": "Unrecognizable ethnic female therapist taking notes on clipboard while filling out form during psychological appointment with anonymous client lying on blurred background",
+   "pexels_id": 5699456,
+   "photographer": "Alex Green",
+   "pexels_url": "https://www.pexels.com/photo/crop-ethnic-psychologist-writing-on-clipboard-during-session-5699456/"
+  },
+  {
+   "page": "hub:insurance",
+   "file": "public/images/stock/hub-insurance.jpg",
+   "source": "pexels",
+   "alt": "A cheerful woman with red hair smiles while holding a blue card against a white background.",
+   "pexels_id": 7821740,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/a-woman-holding-a-card-7821740/"
+  },
+  {
+   "page": "hub:blog",
+   "file": "public/images/stock/hub-blog.jpg",
+   "source": "pexels",
+   "alt": "Overhead view of a doctor writing notes during a medical consultation with coffee and laptop on the table.",
+   "pexels_id": 8376180,
+   "photographer": "Tima Miroshnichenko",
+   "pexels_url": "https://www.pexels.com/photo/high-angle-shot-of-a-person-writing-on-the-paper-using-a-pen-8376180/"
+  },
+  {
+   "page": "hub:home",
+   "file": "public/images/stock/hero-home.jpg",
+   "source": "pexels",
+   "alt": "A medical practitioner checks a patient's blood pressure in a clinical setting, showcasing healthcare service.",
+   "pexels_id": 7659567,
+   "photographer": "Thirdman",
+   "pexels_url": "https://www.pexels.com/photo/a-doctor-taking-patient-s-blood-pressure-7659567/"
+  },
+  {
+   "page": "hub:team",
+   "file": "public/images/stock/hero-team.jpg",
+   "source": "pexels",
+   "alt": "Two medical practitioners walking down a bright clinic hallway with reflections in mirrors.",
+   "pexels_id": 6627918,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/man-and-woman-walking-in-the-hallway-6627918/"
+  },
+  {
+   "page": "hub:about",
+   "file": "public/images/stock/hero-about.jpg",
+   "source": "pexels",
+   "alt": "A couple walking through a bright, modern medical clinic corridor with multiple doors.",
+   "pexels_id": 7108320,
+   "photographer": "Pavel Danilyuk",
+   "pexels_url": "https://www.pexels.com/photo/couple-searching-examination-room-in-hospital-7108320/"
+  },
+  {
+   "page": "hub:sms-pages",
+   "file": "public/images/stock/hero-sms.jpg",
+   "source": "pexels",
+   "alt": "Close-up view of a man texting on a smartphone, capturing communication in action.",
+   "pexels_id": 6669813,
+   "photographer": "RDNE Stock project",
+   "pexels_url": "https://www.pexels.com/photo/man-s-thumbs-typing-on-a-smartphone-6669813/"
+  },
+  {
+   "page": "hub:telehealth",
+   "file": "public/images/stock/hero-telehealth.jpg",
+   "source": "pexels",
+   "alt": "Woman having an online medical consultation on a laptop from her cozy sofa.",
+   "pexels_id": 7195087,
+   "photographer": "https://kaboompics.com/",
+   "pexels_url": "https://www.pexels.com/photo/woman-looking-at-the-laptop-screen-7195087/"
+  }
+ ]
 }

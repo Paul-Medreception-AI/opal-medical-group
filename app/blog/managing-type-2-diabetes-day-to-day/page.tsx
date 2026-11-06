@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Managing Type 2 Diabetes Day to Day | Opal Medical Group',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/blog/managing-type-2-diabetes-day-to-day',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Managing Type 2 Diabetes Day to Day | Opal Medical Group',
     description: 'Practical, evidence-based daily habits for living well with type 2 diabetes: food, movement, glucose monitoring, medications, and when to call your care team.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -44,50 +45,43 @@ const habits = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-managing-type-2-diabetes-day-to-day.jpg" alt="Top view of diabetes management tools including glucose meter and insulin syringes on purple background.">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Managing Type 2 Diabetes Day to Day</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Managing Type 2 Diabetes Day to Day</h1>
           <p className="mt-6 text-white/80 text-sm">Published November 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-managing-type-2-diabetes-day-to-day.jpg"} alt={"Top view of diabetes management tools including glucose meter and insulin syringes on purple background."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           A diabetes diagnosis can feel like a heavy new job you never applied for. Suddenly there are numbers to track, foods to rethink, and appointments to keep. It is normal to feel overwhelmed. The encouraging truth is that type 2 diabetes responds well to steady, everyday choices, and small changes add up to real protection for your heart, nerves, eyes, and kidneys.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What type 2 diabetes is</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What type 2 diabetes is</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           In type 2 diabetes, the body does not use insulin effectively, and over time it may not make enough. Insulin moves sugar from the blood into cells for energy. When it falls short, glucose builds up in the bloodstream. Many people have no symptoms early on, while others notice increased thirst, frequent urination, fatigue, blurry vision, or slow-healing wounds.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who it affects and why it matters</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who it affects and why it matters</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Type 2 diabetes is most common in adults, and risk rises with age, excess weight, family history, inactivity, a history of gestational diabetes, and prediabetes. Over years, high blood sugar can damage blood vessels and nerves. That raises the risk of heart disease, stroke, kidney disease, vision loss, and foot problems. Good daily management lowers those risks substantially.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What the research tells us</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What the research tells us</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Large studies, including the Diabetes Prevention Program and the Look AHEAD trial, show that lifestyle changes can improve glucose control, and in some people lead to remission or delay progression. Losing even 5 to 7 percent of body weight can improve insulin sensitivity. Long-term research also shows that keeping blood sugar, blood pressure, and cholesterol in target ranges reduces complications. Many adults aim for an A1C under 7 percent, though the right goal is individual and should be set with your clinician.
         </p>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant,serif]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Small changes add up to real protection for your heart, nerves, eyes, and kidneys.
         </div>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Eating in a way you can sustain</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Eating in a way you can sustain</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           There is no single diabetes diet. Mediterranean-style, lower-carbohydrate, and plate-method approaches can all work. The best plan is one you enjoy enough to keep. Consider these starting points:
         </p>
@@ -97,24 +91,24 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Movement, sleep, and stress</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Movement, sleep, and stress</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Muscles pull sugar from the blood during activity, so even a 10-minute walk after meals can lower glucose. Strength training twice a week adds benefit. Poor sleep and chronic stress raise hormones that push blood sugar up, so protecting seven or more hours of sleep and finding stress outlets, like walking, breathing exercises, or time with friends, is part of treatment, not an extra.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Monitoring and medication</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Monitoring and medication</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Some people check glucose with a fingerstick meter, others use a continuous glucose monitor. Your clinician can advise how often to test based on your medications and goals. Several medication classes are available, including metformin and newer options that also support heart and kidney health. If a medication causes side effects or is hard to afford, say so. There are often alternatives.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">A daily checklist</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">A daily checklist</h2>
         <ul className="space-y-3 mb-4">
           {habits.map((t) => (
             <li key={t} className="flex gap-3 text-[var(--color-ink)] leading-loose text-base"><Check />{t}</li>
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">When to call for help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">When to call for help</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Contact your care team if readings stay above your target, you have frequent lows (shaky, sweaty, confused), or you notice a foot wound that is not healing. Seek emergency care for severe confusion, trouble breathing, persistent vomiting, or chest pain.
         </p>
@@ -138,7 +132,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant,serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <a href="/blog" className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 hover:shadow-lg transition-shadow">
               <svg className="w-8 h-8 text-[var(--color-accent)] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
@@ -161,7 +155,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/80">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">Contact Us</a>
         </div>

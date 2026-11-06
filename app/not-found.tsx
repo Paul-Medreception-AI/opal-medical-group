@@ -4,10 +4,10 @@ export default function NotFound() {
   return (
     <main className="bg-[var(--color-cream)] min-h-screen flex items-center justify-center px-6">
       <div className="text-center animate-fade-up">
-        <p className="font-[Cormorant,serif] text-9xl text-[var(--color-primary)] opacity-20 leading-none" aria-hidden="true">
+        <p className="font-cormorant text-9xl text-[var(--color-primary)] opacity-20 leading-none" aria-hidden="true">
           404
         </p>
-        <h1 className="font-[Cormorant,serif] text-4xl text-[var(--color-ink)] mt-4">
+        <h1 className="font-cormorant text-4xl text-[var(--color-ink)] mt-4">
           Page Not Found
         </h1>
         <p className="text-[var(--color-muted)] mt-2">

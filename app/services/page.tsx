@@ -2,6 +2,9 @@
 // mapped from lib/data/services.ts, so a page added there (including by the silo
 // builder's data_append) appears here without editing this file.
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
+import Image from 'next/image'
+import { focus } from '@/lib/imageFocus'
 import { SERVICES } from '../../lib/data/services'
 
 const TITLE = "Services | Opal Medical Group"
@@ -17,8 +20,8 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: URL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, siteName: "Opal Medical Group", type: 'website', images: [{ url: "/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg" }] },
-  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ["/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg"] },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: URL, siteName: "Opal Medical Group", type: 'website', images: [{ url: "/images/stock/hero-home.jpg" }] },
+  twitter: { card: 'summary_large_image', title: TITLE, description: DESCRIPTION, images: ["/images/stock/hero-home.jpg"] },
 }
 
 type Card = { slug: string; title: string; description?: string; image?: { src: string; alt: string } }
@@ -31,25 +34,25 @@ const CARDS: Card[] = [
 export default function ServicesHubPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-services.jpg" alt="A clinician in a white coat with a stethoscope at a clinic desk">
+        <div>
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>
             <span>Services</span>
           </nav>
           <h1 className="font-cormorant text-5xl md:text-6xl font-light">{HEADING}</h1>
-          <p className="text-xl text-white/85 max-w-2xl mx-auto mt-4 leading-relaxed">{SUBHEADING}</p>
+          <p className="text-xl text-white/85 max-w-2xl mt-4 leading-relaxed">{SUBHEADING}</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {CARDS.map((c) => (
             <a key={c.slug} href={"/services/" + c.slug} className="group block bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
               {c.image && c.image.src ? (
-                <div className="w-full bg-[var(--color-light)] overflow-hidden">
-                  <img src={c.image.src} alt={c.image.alt || c.title} loading="lazy" className="block w-full h-auto group-hover:scale-105 transition-transform duration-500" />
+                <div className="relative h-48 bg-[var(--color-light)] overflow-hidden">
+                  <Image src={c.image.src} alt={c.image.alt || c.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px" className="object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focus(c.image.src) }} />
                 </div>
               ) : null}
               <div className="p-8">

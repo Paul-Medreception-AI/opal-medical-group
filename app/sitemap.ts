@@ -64,6 +64,7 @@ const STATIC: [string, number, Freq][] = [
   ["/new-patients", 0.70, 'monthly'],
   ["/patient-form-sms", 0.30, 'yearly'],
   ["/privacy-sms", 0.30, 'yearly'],
+  ["/refer", 0.60, 'monthly'],
   ["/reviews", 0.70, 'monthly'],
   ["/services", 0.90, 'weekly'],
   ["/team", 0.70, 'monthly'],

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Anemia and Fatigue: What Is the Connection?',
@@ -10,13 +11,13 @@ export const metadata: Metadata = {
     url: 'https://opalmedicalgroup.com/blog/anemia-and-fatigue-what-is-the-connection',
     siteName: 'Opal Medical Group',
     type: 'website',
-    images: [{ url: '/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg' }],
+    images: [{ url: '/images/stock/hero-home.jpg' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Anemia and Fatigue: What Is the Connection?',
     description: 'Learn how anemia causes fatigue, who is at risk, which symptoms to watch for, and when to see a primary care provider for testing and treatment.',
-    images: ['/images/587b7346a126883e7feca835_video_preview_h264-poster-00001.jpg'],
+    images: ['/images/stock/hero-home.jpg'],
   },
 }
 
@@ -43,36 +44,29 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-anemia-and-fatigue-what-is-the-connection.jpg" alt="A woman lying on a sofa showing visible stress and emotion, clutching a pillow.">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white">Home</a> › <a href="/blog" className="hover:text-white">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Anemia and Fatigue: What Is the Connection?</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Anemia and Fatigue: What Is the Connection?</h1>
           <p className="mt-6 text-white/80 text-sm">Published November 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-anemia-and-fatigue-what-is-the-connection.jpg"} alt={"A woman lying on a sofa showing visible stress and emotion, clutching a pillow."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           You sleep a full night, drink your coffee, and still feel like you are dragging through the day. Climbing stairs leaves you winded, your thoughts feel foggy, and you wonder why everyone else seems to have more energy. If this sounds familiar, you are not imagining it, and you are not simply &quot;out of shape.&quot; One common and very treatable cause of persistent tiredness is anemia.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Anemia?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Anemia?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Anemia means your body does not have enough healthy red blood cells, or those cells do not carry enough hemoglobin. Hemoglobin is the protein that binds oxygen in your lungs and delivers it to muscles, organs and the brain. When oxygen delivery drops, every tissue has to work with less fuel than it needs.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Anemia Makes You Feel So Tired</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Anemia Makes You Feel So Tired</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Your cells use oxygen to produce energy. With fewer working red blood cells, your heart pumps harder to move the oxygen you do have, and your muscles tire more quickly. The result is a deep, heavy fatigue that rest does not fully fix. Many people also notice:
         </p>
@@ -82,11 +76,11 @@ export default function Page() {
           ))}
         </ul>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Anemia means your body does not have enough healthy red blood cells, or those cells do not carry enough hemoglobin.
         </div>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Causes of Anemia</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Causes of Anemia</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Anemia is a sign of something else going on, so finding the cause matters. The most common types include:
         </p>
@@ -100,17 +94,17 @@ export default function Page() {
           <strong>Anemia of chronic disease</strong> may accompany kidney disease, inflammatory conditions or long-term infections. Inherited conditions and bone marrow problems are less common causes.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Most at Risk?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Most at Risk?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Anyone can develop anemia, but risk is higher for women of childbearing age, people who are pregnant, adults over 65, those following strict vegetarian or vegan diets without planning, and people with chronic medical conditions or digestive disorders. Frequent blood donors and people taking certain long-term medications may also be affected.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">How Anemia Is Diagnosed</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How Anemia Is Diagnosed</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Diagnosis usually begins with a conversation about your symptoms, diet, menstrual history, medications and family history, followed by a physical exam. A complete blood count measures your hemoglobin and red blood cells. If the result is low, additional tests such as iron studies, vitamin B12 and folate levels can point to the cause. Because fatigue also has other causes, including thyroid problems, sleep disorders, depression and diabetes, your provider may check for these too.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Treatment and Practical Steps</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Treatment and Practical Steps</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Treatment depends on the cause. Iron deficiency is often corrected with iron supplements and dietary changes, while B12 deficiency may be treated with supplements or injections. If blood loss is the source, finding and addressing it is essential. Most people begin to feel better within weeks once the underlying problem is treated, though rebuilding iron stores can take longer.
         </p>
@@ -120,7 +114,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Help</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Make an appointment if fatigue is lasting, getting worse, or interfering with work and daily life. Seek urgent care right away for chest pain, severe shortness of breath, fainting, or black or bloody stools.
         </p>
@@ -145,14 +139,14 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white border border-[var(--color-border)] rounded-2xl p-6 transition hover:shadow-lg">
                 <svg className="w-8 h-8 text-[var(--color-accent)] mb-4" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
                 </svg>
-                <h4 className="font-[Cormorant] text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
+                <h4 className="font-cormorant text-2xl text-[var(--color-ink)] mb-2">{r.title}</h4>
                 <p className="text-[var(--color-muted)] text-sm">{r.text}</p>
               </a>
             ))}
@@ -162,7 +156,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/90">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition text-white px-8 py-3 rounded-full">Contact Us</a>
         </div>
