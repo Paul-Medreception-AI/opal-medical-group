@@ -15,6 +15,7 @@ const SITE_TITLE = 'Opal Medical Group | Primary Care in Hagerstown, MD'
 const SITE_DESCRIPTION = 'Internal medicine and family primary care at 1126 Opal Ct, Hagerstown, MD. Same-day sick visits, telehealth, chronic disease management and preventive care. Open Monday to Friday, 8 AM to 5 PM.'
 
 export const metadata: Metadata = {
+  verification: { google: '1i1BUJBoZD9EF-A_JkGJyYveqqTjDf6KMOOIctNsM4Q' },
   // A bare string: no title.template, so every page's own title ships exactly once.
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
