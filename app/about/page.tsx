@@ -24,8 +24,8 @@ const values = [
 ]
 
 const providers = [
-  { name: 'Yi Vance, CRNP', role: 'Family Nurse Practitioner', photo: '/images/practice/yi-vance.jpg', position: '59% 40%', line: 'Joined full time in 2024 after years as a registered nurse at Meritus Medical Center. Speaks Chinese and English.' },
-  { name: 'Farid Murshed, MD', role: 'Internal Medicine', photo: '/images/practice/farid-murshed.jpg', position: '47% 45%', line: 'Board-certified internist, more than 18 years at Opal. Speaks English, Persian and Bengali.' },
+  { name: 'Yi Vance, CRNP', role: 'Family Nurse Practitioner', photo: '/images/practice/yi-vance.jpg', position: '59% 40%', zoom: 0.72, line: 'Joined full time in 2024 after years as a registered nurse at Meritus Medical Center. Speaks Chinese and English.' },
+  { name: 'Farid Murshed, MD', role: 'Internal Medicine', photo: '/images/practice/farid-murshed.jpg', position: '47% 45%', zoom: 0.84, line: 'Board-certified internist, more than 18 years at Opal. Speaks English, Persian and Bengali.' },
   { name: 'M. Khalid Waseem, MD, CMD', role: 'Internal Medicine', photo: '/images/practice/khalid-waseem.jpg', position: '48% 30%', line: 'Board-certified internist and certified medical director, more than 18 years at Opal. Speaks Hindi, Punjabi, Urdu and English.' },
 ]
 
@@ -100,8 +100,18 @@ export default function AboutPage() {
           <div className="grid gap-6 sm:grid-cols-3">
             {providers.map((p) => (
               <Link key={p.name} href="/team" className="group rounded-2xl border border-[var(--color-border)] bg-[var(--color-cream)] overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="relative h-72 bg-[var(--color-light)]">
-                  <Image src={p.photo} alt={`Portrait of ${p.name}`} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" style={{ objectPosition: p.position }} />
+                <div className="relative h-72 overflow-hidden bg-[var(--color-light)]">
+                  {p.zoom ? (
+                    <>
+                      {/* The source photo is a tight 403x334 crop with no wider original anywhere, so a "zoomed out"
+                          portrait is the same photo drawn smaller over a soft, blurred copy of itself. */}
+                      <Image src={p.photo} alt="" aria-hidden fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover scale-125 blur-xl opacity-90" style={{ objectPosition: p.position }} />
+                      <Image src={p.photo} alt={`Portrait of ${p.name}`} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-contain"
+                        style={{ transform: `scale(${p.zoom})`, transformOrigin: '50% 52%', WebkitMaskImage: 'linear-gradient(to right, transparent 3%, black 15%, black 85%, transparent 97%), linear-gradient(to bottom, transparent 0%, black 13%, black 87%, transparent 100%)', maskImage: 'linear-gradient(to right, transparent 3%, black 15%, black 85%, transparent 97%), linear-gradient(to bottom, transparent 0%, black 13%, black 87%, transparent 100%)', WebkitMaskComposite: 'source-in', maskComposite: 'intersect' }} />
+                    </>
+                  ) : (
+                    <Image src={p.photo} alt={`Portrait of ${p.name}`} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" style={{ objectPosition: p.position }} />
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="font-cormorant text-2xl font-semibold text-[var(--color-ink)] group-hover:text-[var(--color-primary)]">{p.name}</h3>
