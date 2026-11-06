@@ -36,9 +36,9 @@ const why = [
 ]
 
 const team = [
-  { name: 'Yi Vance, CRNP', role: 'Family Nurse Practitioner' },
-  { name: 'Farid Murshed, MD', role: 'Internal Medicine' },
-  { name: 'M. Khalid Waseem, MD, CMD', role: 'Internal Medicine' },
+  { name: 'Yi Vance, CRNP', role: 'Family Nurse Practitioner', photo: '/images/practice/yi-vance.jpg', position: '59% 40%' },
+  { name: 'Farid Murshed, MD', role: 'Internal Medicine', photo: '/images/practice/farid-murshed.jpg', position: '47% 45%' },
+  { name: 'M. Khalid Waseem, MD, CMD', role: 'Internal Medicine', photo: '/images/practice/khalid-waseem.jpg', position: '48% 30%' },
 ]
 
 // Verbatim Google reviews of Opal Medical Group (Google Business Profile, pulled 2026-11-06).
@@ -177,8 +177,8 @@ export default function Home() {
           <div className="lg:col-span-3 grid sm:grid-cols-3 gap-4">
             {team.map((m) => (
               <Link key={m.name} href="/team" className="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-2xl p-6 text-center hover:shadow-lg transition-shadow">
-                <div className="mx-auto w-16 h-16 rounded-full bg-[var(--color-light)] flex items-center justify-center">
-                  <svg className="w-8 h-8 text-[var(--color-primary)]" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4" /><path strokeLinecap="round" strokeLinejoin="round" d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" /></svg>
+                <div className="relative mx-auto w-28 h-28 rounded-full overflow-hidden bg-[var(--color-light)] ring-4 ring-white shadow">
+                  <Image src={m.photo} alt={`Portrait of ${m.name}`} fill sizes="112px" className="object-cover" style={{ objectPosition: m.position }} />
                 </div>
                 <p className="font-cormorant text-xl font-semibold text-[var(--color-ink)] mt-4">{m.name}</p>
                 <p className="text-xs uppercase tracking-wide text-[var(--color-primary)] font-semibold mt-1">{m.role}</p>

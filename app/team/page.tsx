@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import SplitHero from '@/components/SplitHero'
 
 const TITLE = 'Our Providers | Opal Medical Group, Hagerstown'
@@ -15,23 +16,25 @@ export const metadata: Metadata = {
 }
 
 // Bios carry over the practice's own provider pages (opalmedicalgroup.com/doctors/*), with the
-// credentials the NPPES registry confirms. No photos were available; a silhouette is shown
-// rather than a stock stand-in.
+// credentials the NPPES registry confirms. Headshots are the practice's own, from its previous website.
 const team = [
   {
     name: 'Yi Vance, CRNP',
+    photo: { src: '/images/practice/yi-vance.jpg', position: '59% 40%' },
     role: 'Family Nurse Practitioner',
     facts: ['Board certified, American Academy of Nurse Practitioners', 'Advanced nursing degree, Shenandoah University, Winchester, VA', 'Speaks Chinese and English'],
     bio: 'Yi Vance joined Opal Medical Group full time in January 2024 after working as a registered nurse at Meritus Medical Center and in a wound clinic. She brings that hands-on nursing background to every visit, listens carefully and explains your options clearly. Patients see her for annual exams, sick visits, chronic condition follow-ups and telehealth.',
   },
   {
     name: 'Farid Murshed, MD',
+    photo: { src: '/images/practice/farid-murshed.jpg', position: '47% 45%' },
     role: 'Internal Medicine',
     facts: ['Board certified in internal medicine', 'More than 18 years at Opal Medical Group in Hagerstown', 'Speaks English, Persian and Bengali'],
     bio: 'Dr. Murshed is a board-certified internist providing comprehensive adult care, from preventive visits and Medicare wellness exams to the long-term management of diabetes, high blood pressure, heart disease and other chronic conditions. Patients can expect thoughtful, clear communication at every step.',
   },
   {
     name: 'M. Khalid Waseem, MD, CMD',
+    photo: { src: '/images/practice/khalid-waseem.jpg', position: '48% 30%' },
     role: 'Internal Medicine',
     facts: ['Board certified in internal medicine', 'Certified Medical Director (CMD) in post-acute and long-term care', 'More than 18 years at Opal Medical Group in Hagerstown', 'Speaks Hindi, Punjabi, Urdu and English'],
     bio: 'Dr. Waseem leads Opal Medical Group and has practiced internal medicine in Hagerstown for more than two decades. Alongside the office practice he serves as a medical director for local nursing and assisted living facilities. He delivers compassionate, patient-focused care across the full range of adult health needs.',
@@ -59,11 +62,8 @@ export default function TeamPage() {
         <div className="max-w-6xl mx-auto px-6 space-y-8">
           {team.map((m) => (
             <article key={m.name} className="bg-white rounded-2xl border border-[var(--color-border)] shadow-sm grid md:grid-cols-[200px_1fr] gap-8 p-8">
-              <div className="h-48 md:h-full min-h-[12rem] rounded-xl bg-[var(--color-light)] flex items-center justify-center">
-                <svg className="w-20 h-20 text-[var(--color-primary)]" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                  <circle cx="12" cy="8" r="4" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
-                </svg>
+              <div className="relative h-64 md:h-full min-h-[14rem] rounded-xl overflow-hidden bg-[var(--color-light)]">
+                <Image src={m.photo.src} alt={`Portrait of ${m.name}`} fill sizes="(max-width: 768px) 100vw, 200px" className="object-cover" style={{ objectPosition: m.photo.position }} />
               </div>
               <div>
                 <h2 className="font-cormorant text-3xl text-[var(--color-ink)]">{m.name}</h2>
