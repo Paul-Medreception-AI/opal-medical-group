@@ -46,7 +46,7 @@ export default function ContactPage() {
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
-          <div id="form" className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-[var(--color-border)] self-start scroll-mt-28">
+          <div id="form" className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-[var(--color-border)] self-start scroll-mt-36">
             <h2 className="font-cormorant text-3xl mb-2 text-[var(--color-dark)]">Request an Appointment</h2>
             <p className="mb-6 text-[var(--color-muted)]">Leave your name and the best way to reach you. Our front office calls back during business hours to find a time.</p>
             <ContactForm />

@@ -21,11 +21,9 @@ export const metadata: Metadata = {
 // Facts only. Sources: the practice's own site, Dr. Waseem's discovery calls (2026-10-19 and
 // 2026-10-28) and the NPPES registry. Nothing here is a claim the practice has not made.
 const trust = [
-  'Accepting new patients',
-  'Same-day sick visits',
-  'Telehealth visits',
-  'Monday to Friday, 8 AM to 5 PM',
-  'Caring for Hagerstown since 2000',
+  'Accepting New Patients',
+  'Same-Day Sick Visits',
+  'Telehealth Available',
 ]
 
 const why = [
@@ -73,9 +71,9 @@ export default function Home() {
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white">
         <div className="max-w-7xl mx-auto px-6 py-14 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           <div className="min-w-0">
-            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-white/80">Hagerstown, MD · Internal Medicine &amp; Family Primary Care</p>
-            <h1 className="font-cormorant text-5xl sm:text-6xl font-light leading-[1.05] mt-4">Primary Care for Hagerstown, from Checkups to Chronic Conditions</h1>
-            <p className="text-lg sm:text-xl text-white/90 mt-6 leading-relaxed">Two internal medicine physicians and a family nurse practitioner at 1126 Opal Court, with same-day sick visits and telehealth.</p>
+            <p className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase text-white/80">Internal Medicine &amp; Family Care</p>
+            <h1 className="font-cormorant text-5xl sm:text-6xl font-light leading-[1.05] mt-4">Primary Care in Hagerstown, MD</h1>
+            <p className="text-lg sm:text-xl text-white/90 mt-6 leading-relaxed">Care from two internal medicine physicians and a family nurse practitioner. Conveniently located on Opal Court.</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/contact#form" data-ga="consultation_click" className="bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-8 py-4 rounded-xl font-bold shadow-xl transition-colors">Book Appointment</Link>
               <a href="tel:+12404202666" data-ga="phone_click" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-colors">Call (240) 420-2666</a>

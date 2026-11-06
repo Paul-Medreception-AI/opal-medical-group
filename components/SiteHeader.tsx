@@ -40,10 +40,10 @@ function Chevron() {
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[var(--color-border)] shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-32 flex items-center justify-between gap-4">
         <a href="/" className="flex items-center min-w-0" aria-label={NAME + ', home'}>
           {LOGO ? (
-            <img src={LOGO} alt={NAME} width={213} height={160} className="h-[66px] w-auto max-w-[min(330px,calc(100vw-7.5rem))] object-contain object-left" />
+            <img src={LOGO} alt={NAME} width={213} height={160} className="h-[99px] w-auto max-w-[min(330px,calc(100vw-7.5rem))] object-contain object-left" />
           ) : (
             <span className="font-cormorant text-xl line-clamp-2 font-semibold text-[var(--color-primary)] leading-tight max-w-[calc(100vw-6rem)] sm:max-w-[16rem]">{NAME}</span>
           )}
@@ -90,7 +90,7 @@ export default function SiteHeader() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </summary>
-            <div className="absolute inset-x-0 top-full bg-white border-b border-[var(--color-border)] shadow-xl max-h-[calc(100vh-6rem)] overflow-y-auto">
+            <div className="absolute inset-x-0 top-full bg-white border-b border-[var(--color-border)] shadow-xl max-h-[calc(100vh-8rem)] overflow-y-auto">
               <nav className="px-4 py-4 space-y-1" aria-label="Mobile">
                 {NAV.map((g) =>
                   g.items.length ? (
